@@ -55,3 +55,27 @@ collections:
               { name: tvl, label: TVL, widget: string },
             ],
         }
+      - {
+          name: crd2,
+          label: Card 2,
+          widget: object,
+          fields:
+            [
+              {
+                name: tkn1,
+                label: Token 1,
+                widget: image,
+                upload_url: /images/tokens,
+              },
+              { name: tkr1, label: Ticker 1, widget: string },
+              {
+                name: tkn2,
+                label: Token 2,
+                widget: image,
+                upload_url: /images/tokens,
+              },
+              { name: tkr2, label: Ticker 2, widget: string },
+              { name: apr, label: APR, widget: string },
+              { name: tvl, label: TVL, widget: string },
+            ],
+        }
