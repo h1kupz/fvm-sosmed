@@ -31,12 +31,17 @@ collections:
         label: Number of Cards
         widget: select
         options: ["oneCard", "twoCard", "threeCard"]
-      - name: crd1
-        label: Card 1
-        fields:
-          - {
-              name: tkn1,
-              label: Token 1,
-              widget: image,
-              upload_url: /images/tokens,
-            }
+      - {
+          name: crd1,
+          label: Card 1,
+          widget: object,
+          fields:
+            [
+              {
+                name: tkn1,
+                label: Token 1,
+                widget: image,
+                upload_url: /images/tokens,
+              },
+            ],
+        }
