@@ -1,17 +1,15 @@
-backend: # The two following lines need to be indented
-  name: git-gateway # The authentication method we use for Netlify CMS
-  branch: main # Branch to update when we push our content (it can be any branch in our repo)
-
-# Do not indent these lines
-media_folder: "public/images/uploads" # Exact path where we store the uploaded media
-public_folder: "/images/uploads" # We do not need to specify the /public part as all the files from it are stored in the root directory after the build step
+backend:
+  name: git-gateway
+  repo: h1kupz/fvm-sosmed
+  branch: main
 
 # site_url: # Replace with site's URL
 # display_url: # Replace with site's URL
 
 logo_url: /assets/fvm.png # Replace with path to logo
 
-# slug: { { slug } } # The URL should be the name of the title of the post/document
+media_folder: public/images
+public_folder: /images
 
 collections:
   - name: aprs
@@ -38,54 +36,6 @@ collections:
         options: ["oneCard", "twoCard", "threeCard"]
       - name: crd1
         label: Card 1
-        widget: fieldset
-        fields:
-          - name: tkn1
-            label: Token 1
-            widget: image
-            upload_url: /images/tokens
-          - name: tkr1
-            label: Ticker 1
-            widget: string
-          - name: tkn2
-            label: Token 2
-            widget: image
-            upload_url: /images/tokens
-          - name: tkr2
-            label: Ticker 2
-            widget: string
-          - name: apr
-            label: APR
-            widget: string
-          - name: tvl
-            label: TVL
-            widget: string
-      - name: crd2
-        label: Card 2
-        widget: fieldset
-        fields:
-          - name: tkn1
-            label: Token 1
-            widget: image
-            upload_url: /images/tokens
-          - name: tkr1
-            label: Ticker 1
-            widget: string
-          - name: tkn2
-            label: Token 2
-            widget: image
-            upload_url: /images/tokens
-          - name: tkr2
-            label: Ticker 2
-            widget: string
-          - name: apr
-            label: APR
-            widget: string
-          - name: tvl
-            label: TVL
-            widget: string
-      - name: crd3
-        label: Card 3
         widget: fieldset
         fields:
           - name: tkn1
