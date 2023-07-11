@@ -3,10 +3,9 @@ backend:
   repo: h1kupz/fvm-sosmed
   branch: main
 
-# site_url: # Replace with site's URL
-# display_url: # Replace with site's URL
-
-logo_url: /assets/fvm.png # Replace with path to logo
+site_url: https://melodious-boba-7cf388.netlify.app
+display_url: https://melodious-boba-7cf388.netlify.app
+logo_url: https://melodious-boba-7cf388.netlify.app/assets/fvm.png
 
 media_folder: public/images
 public_folder: /images
@@ -14,7 +13,7 @@ public_folder: /images
 collections:
   - name: aprs
     label: APRs
-    folder: content/aprs
+    folder: /src/content/aprs
     format: frontmatter
     create: true
     fields:
