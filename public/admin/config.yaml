@@ -8,7 +8,7 @@ public_folder: "/images"
 collections:
   - name: "aprs"
     label: "APRs"
-    folder: "src/content/aprs"
+    folder: "/src/content/aprs"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
