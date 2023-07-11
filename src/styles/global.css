@@ -1,0 +1,72 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "monument";
+  src: url("../assets/MonumentExtended-Regular.otf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply min-h-screen font-inter uppercase tracking-widest text-vgreen pb-16 bg-[url('/images/backgrounds/background10.png')] bg-cover;
+  }
+  header {
+    @apply flex w-full h-10 fixed top-0 z-40;
+  }
+  nav {
+    @apply flex gap-6 items-center justify-between w-full max-w-[1200px] mx-auto;
+  }
+  nav img {
+    @apply h-6 w-auto drop-shadow-fvm;
+  }
+  nav button {
+    @apply text-xs font-semibold hover:text-background uppercase tracking-wide vgradr hover:vgradl vborder px-2 py-1 hover:bg-vgreen/70 drop-shadow-fvm;
+  }
+  nav li {
+    @apply px-3 py-2 bg-background/90 text-xs hover:text-vwhite;
+  }
+  main {
+    @apply pt-10;
+  }
+  section {
+    @apply w-[1200px] h-[675px] overflow-hidden mx-auto drop-shadow-fvm;
+  }
+  h1 {
+    @apply text-4xl normal-case font-bold tracking-wide leading-tight drop-shadow-v;
+  }
+  h2 {
+    @apply text-7xl font-extrabold leading-none mb-2 drop-shadow-v text-right;
+  }
+  h3 {
+    @apply text-3xl normal-case font-bold tracking-wider leading-none mb-1 drop-shadow-v text-right;
+  }
+  h4 {
+    @apply text-xl font-bold uppercase leading-none mt-4 mb-2 drop-shadow-v text-right;
+  }
+  h5 {
+    @apply font-roboto text-3xl tracking-wide leading-none drop-shadow-v;
+  }
+  h6 {
+    @apply font-roboto text-xs normal-case tracking-wide text-center leading-none drop-shadow-v;
+  }
+}
+
+
+@layer components {
+  .vgradl {
+    @apply bg-gradient-to-l from-background/60 to-vgreen/50;
+  }
+  .vgradr {
+    @apply bg-gradient-to-r from-background/50 to-lbackground/40;
+  }
+  .vborder {
+    @apply border-2 border-vgreen/30;
+  }
+}

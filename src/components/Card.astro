@@ -1,0 +1,51 @@
+---
+const { crds, tkn1, tkr1, tkn2, tkr2, apr, tvl } = Astro.props;
+---
+
+<div class="card vborder">
+    <div class=`${crds} cardHead vgradl`>
+        <img src={tkn1} alt={tkr1} class="cardToken" />
+        <img src={tkn2} alt={tkr2} class="cardToken -ml-10" />
+        <div class="flex flex-wrap items-center gap-x-2 gap-y-1 ml-auto">
+            <img
+                src="/assets/FantomNoBg.png"
+                alt="Fantom"
+                class="h-12 ml-auto"
+            />
+            <div class="ml-auto">
+                <h6 class="text-xs">Live on:</h6>
+                <h6 class="uppercase font-medium">Fantom</h6>
+            </div>
+        </div>
+    </div>
+    <div class=`${crds} cardBody vgradr`>
+        <h4>~Apr</h4>
+        <h2>{apr}%</h2>
+        <h3>{tkr1} / {tkr2}</h3>
+        <h4>Current TVL: ~${tvl}</h4>
+    </div>
+</div>
+
+<style>
+    .card {
+        @apply drop-shadow-fvm rounded-3xl;
+    }
+    .cardHead {
+        @apply rounded-t-3xl p-5 mx-auto h-28 flex;
+    }
+    .cardBody {
+        @apply rounded-b-3xl p-6 mx-auto;
+    }
+    .cardToken {
+        @apply rounded-full bg-background h-36 border-2 border-vgreen/40 drop-shadow-v;
+    }
+    .oneCard {
+        @apply w-[500px];
+    }
+    .twoCard {
+        @apply w-[400px];
+    }
+    .threeCard {
+        @apply w-[350px] p-3;
+    }
+</style>

@@ -1,0 +1,37 @@
+---
+import { getCollection } from "astro:content";
+
+const allAprs = await getCollection("aprs");
+---
+
+<nav>
+  <a href="/" class="flex items-center gap-3">
+    <img src="/assets/fvm.png" alt="FVM" />
+    <h4
+      class="text-left font-light text-[22px] leading-none mb-[16px] drop-shadow-fvm"
+    >
+      Sosmed
+    </h4>
+  </a>
+  <div class="dropdown">
+    <button>APRs</button>
+    <ul class="dropdown-menu">
+      {
+        allAprs.map((apr) => (
+          <li>
+            <a href={"/aprs/" + apr.slug}>{apr.data.title}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</nav>
+
+<style>
+  .dropdown-menu {
+    @apply absolute pt-2 hidden;
+  }
+  .dropdown:hover .dropdown-menu {
+    @apply block;
+  }
+</style>

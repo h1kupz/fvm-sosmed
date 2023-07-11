@@ -1,0 +1,12 @@
+---
+import TweetFoot from "./TweetFoot.astro";
+const { bg } = Astro.props;
+---
+
+<div
+    style={`background-image: url(${bg});`}
+    class="w-[1200px] h-[675px] overflow-hidden mx-auto drop-shadow-fvm bg-center flex flex-col items-center justify-center gap-4"
+>
+    <slot />
+    <TweetFoot />
+</div>
