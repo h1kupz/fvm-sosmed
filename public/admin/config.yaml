@@ -1,29 +1,24 @@
 backend:
   name: git-gateway
-  repo: h1kupz/fvm-sosmed
   branch: main
-
-site_url: https://melodious-boba-7cf388.netlify.app
-display_url: https://melodious-boba-7cf388.netlify.app
-logo_url: https://melodious-boba-7cf388.netlify.app/assets/fvm.png
 
 media_folder: public/images
 public_folder: /images
 
 collections:
-  - name: aprs
-    label: APRs
-    folder: /src/content/aprs
-    format: frontmatter
+  - label: "APRs"
+    name: "aprs"
+    folder: "/src/content/aprs"
+    format: "frontmatter"
     create: true
     fields:
-      - { name: title, label: Title, widget: string }
-      - { name: header, label: Header, widget: string }
+      - { label: "Title", name: title, widget: "string" }
+      - { label: "Header", name: header, widget: "string" }
       - {
-          name: bgImage,
-          label: Background Image,
-          widget: image,
+          label: "Background Image",
+          name: "bgImage",
+          widget: "image",
           choose_url: true,
           required: true,
-          upload_url: /images/backgrounds,
         }
+      - { label: Body, name: body, widget: markdown, required: true }
