@@ -59,6 +59,9 @@
 }
 
 @layer components {
+  .navButton {
+    @apply text-xs font-semibold uppercase tracking-wide bg-lbackground hover:bg-vgreen/50 hover:text-background vborder px-2 py-1 drop-shadow-fvm cursor-pointer;
+  }
   .vgradl {
     @apply bg-gradient-to-l from-background/90 to-vgreen/20;
   }

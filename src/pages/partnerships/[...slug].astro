@@ -1,7 +1,5 @@
 ---
-import Card from "../../components/Card.astro";
 import Tweet from "../../components/Tweet.astro";
-import TweetHead from "../../components/TweetHead.astro";
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 // 1. Generate a new path for every collection entry
@@ -22,11 +20,7 @@ const { entry } = Astro.props;
             class="flex items-center justify-center gap-5 w-full h-10 mt-8 px-8 mb-auto drop-shadow-fvm"
         >
             <img src={entry.data.tLogo} alt="Partner" class="h-10" />
-            <img
-                src="/assets/handshake.png"
-                alt="Handshake"
-                class="h-6 drop-shadow-v"
-            />
+            <img src="/assets/handshake.png" alt="Handshake" class="h-6" />
             <img src="/assets/fvm.png" alt="By Velocimeter" class="h-10" />
         </div>
         <div class="flex gap-10">

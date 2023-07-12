@@ -4,6 +4,7 @@ import { getCollection } from "astro:content";
 const partner = await getCollection("partnerships");
 const allAprs = await getCollection("aprs");
 const pb = await getCollection("partnerbribes");
+const tb = await getCollection("totalbribes");
 ---
 
 <nav>
@@ -17,7 +18,7 @@ const pb = await getCollection("partnerbribes");
   </a>
   <div class="flex gap-1">
     <div class="dropdown">
-      <button>Partnerships</button>
+      <div class="navButton">Partnerships</div>
       <ul class="dropdown-menu">
         {
           partner.map((prtnr) => (
@@ -29,7 +30,7 @@ const pb = await getCollection("partnerbribes");
       </ul>
     </div>
     <div class="dropdown">
-      <button>APRs</button>
+      <div class="navButton">APRs</div>
       <ul class="dropdown-menu">
         {
           allAprs.map((apr) => (
@@ -41,12 +42,24 @@ const pb = await getCollection("partnerbribes");
       </ul>
     </div>
     <div class="dropdown">
-      <button>Partner Bribes</button>
+      <div class="navButton">Partner Bribes</div>
       <ul class="dropdown-menu">
         {
           pb.map((pb) => (
             <li>
               <a href={"/partnerbribes/" + pb.slug}>{pb.data.title}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="dropdown">
+      <div class="navButton">Total Bribes</div>
+      <ul class="dropdown-menu">
+        {
+          tb.map((tb) => (
+            <li>
+              <a href={"/totalbribes/" + tb.slug}>{tb.data.title}</a>
             </li>
           ))
         }

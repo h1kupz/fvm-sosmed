@@ -74,6 +74,16 @@ const partnerbribes = defineCollection({
     }),
 });
 
+const totalbribes = defineCollection({
+    type: 'content', // v2.5.0 and later
+    schema: z.object({
+        title: z.string(),
+        bgImage: z.string(),
+        epoch: z.string(),
+        total: z.string(),
+    }),
+});
+
 export const collections = {
-    'aprs': aprs, 'partnerbribes': partnerbribes,
+    'partnerships': partnerships, 'aprs': aprs, 'partnerbribes': partnerbribes, 'totalbribes': totalbribes,
 };
