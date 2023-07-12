@@ -1,14 +1,23 @@
 ---
-const { tkn1, tkr1, tkn2, tkr2 } = Astro.props;
+const { bribes, tkn1, tkr1, tkn2, tkr2 } = Astro.props;
 ---
 
 <div class="flex flex-col items-center w-full">
     <img src="/images/down.png" alt="arrow" class="w-6 mb-4 drop-shadow-v" />
     <div class="flex items-center justify-center">
-        <img src={tkn1} alt={tkr1} class="cardToken tokenSml" />
-        <img src={tkn2} alt={tkr2} class="cardToken tokenSml -ml-5" />
+        <img src={tkn1} alt={tkr1} class=`${bribes} cardToken tokenSml` />
+        <img src={tkn2} alt={tkr2} class=`${bribes} cardToken tokenSml -ml-5` />
     </div>
     <p class="text-center normal-case mt-2">
         {tkr1} / {tkr2}
     </p>
 </div>
+
+<style>
+    .oneBribe {
+        @apply !h-28 mb-1;
+    }
+    .twoBribe {
+        @apply !h-24 mb-1;
+    }
+</style>

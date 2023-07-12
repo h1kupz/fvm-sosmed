@@ -28,6 +28,7 @@ const { entry } = Astro.props;
                 bribes={entry.data.items}
             >
                 <Pair
+                    bribes={entry.data.items}
                     tkn1={entry.data.item1.tkn1}
                     tkr1={entry.data.item1.tkr1}
                     tkn2={entry.data.item1.tkn2}
@@ -37,6 +38,7 @@ const { entry } = Astro.props;
                     entry.data.items === "twoBribe" ||
                     entry.data.items === "threeBribe" ? (
                         <Pair
+                            bribes={entry.data.items}
                             tkn1={entry.data.item2.tkn1}
                             tkr1={entry.data.item2.tkr1}
                             tkn2={entry.data.item2.tkn2}
@@ -47,6 +49,7 @@ const { entry } = Astro.props;
                 {
                     entry.data.items === "threeBribe" && (
                         <Pair
+                            bribes={entry.data.items}
                             tkn1={entry.data.item3.tkn1}
                             tkr1={entry.data.item3.tkr1}
                             tkn2={entry.data.item3.tkn2}
