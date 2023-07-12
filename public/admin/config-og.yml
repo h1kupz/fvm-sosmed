@@ -1,0 +1,105 @@
+backend:
+  name: git-gateway
+  repo: h1kupz/fvm-sosmed
+  branch: main
+
+site_url: https://melodious-boba-7cf388.netlify.app
+display_url: https://melodious-boba-7cf388.netlify.app
+logo_url: https://melodious-boba-7cf388.netlify.app/assets/fvm.png
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: aprs
+    label: APRs
+    folder: /src/content/aprs
+    format: frontmatter
+    create: true
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: header, label: Header, widget: string }
+      - {
+          name: bgImage,
+          label: Background Image,
+          widget: image,
+          choose_url: true,
+          required: true,
+          upload_url: /images/backgrounds,
+        }
+      - name: cards
+        label: Number of Cards
+        widget: select
+        options: ["oneCard", "twoCard", "threeCard"]
+      - {
+          name: crd1,
+          label: Card 1,
+          widget: object,
+          fields:
+            [
+              {
+                name: tkn1,
+                label: Token 1,
+                widget: image,
+                upload_url: /images/tokens,
+              },
+              { name: tkr1, label: Ticker 1, widget: string },
+              {
+                name: tkn2,
+                label: Token 2,
+                widget: image,
+                upload_url: /images/tokens,
+              },
+              { name: tkr2, label: Ticker 2, widget: string },
+              { name: apr, label: APR, widget: string },
+              { name: tvl, label: TVL, widget: string },
+            ],
+        }
+      - {
+          name: crd2,
+          label: Card 2,
+          widget: object,
+          fields:
+            [
+              {
+                name: tkn1,
+                label: Token 1,
+                widget: image,
+                upload_url: /images/tokens,
+              },
+              { name: tkr1, label: Ticker 1, widget: string },
+              {
+                name: tkn2,
+                label: Token 2,
+                widget: image,
+                upload_url: /images/tokens,
+              },
+              { name: tkr2, label: Ticker 2, widget: string },
+              { name: apr, label: APR, widget: string },
+              { name: tvl, label: TVL, widget: string },
+            ],
+        }
+      - {
+          name: crd3,
+          label: Card 3,
+          widget: object,
+          fields:
+            [
+              {
+                name: tkn1,
+                label: Token 1,
+                widget: image,
+                upload_url: /images/tokens,
+              },
+              { name: tkr1, label: Ticker 1, widget: string },
+              {
+                name: tkn2,
+                label: Token 2,
+                widget: image,
+                upload_url: /images/tokens,
+              },
+              { name: tkr2, label: Ticker 2, widget: string },
+              { name: apr, label: APR, widget: string },
+              { name: tvl, label: TVL, widget: string },
+            ],
+        }

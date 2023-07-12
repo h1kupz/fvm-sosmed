@@ -10,6 +10,14 @@ logo_url: https://melodious-boba-7cf388.netlify.app/assets/fvm.png
 media_folder: public/images
 public_folder: /images
 
+apr_fields: &apr_fields
+  - { name: tkn1, label: Token 1, widget: image }
+  - { name: tkr1, label: Ticker 1, widget: string }
+  - { name: tkn2, label: Token 2, widget: image }
+  - { name: tkr2, label: Ticker 2, widget: string }
+  - { name: apr, label: APR, widget: string }
+  - { name: tvl, label: TVL, widget: string }
+
 collections:
   - name: aprs
     label: APRs
@@ -25,57 +33,11 @@ collections:
           widget: image,
           choose_url: true,
           required: true,
-          upload_url: /images/backgrounds,
         }
       - name: cards
         label: Number of Cards
         widget: select
         options: ["oneCard", "twoCard", "threeCard"]
-      - {
-          name: crd1,
-          label: Card 1,
-          widget: object,
-          fields:
-            [
-              {
-                name: tkn1,
-                label: Token 1,
-                widget: image,
-                upload_url: /images/tokens,
-              },
-              { name: tkr1, label: Ticker 1, widget: string },
-              {
-                name: tkn2,
-                label: Token 2,
-                widget: image,
-                upload_url: /images/tokens,
-              },
-              { name: tkr2, label: Ticker 2, widget: string },
-              { name: apr, label: APR, widget: string },
-              { name: tvl, label: TVL, widget: string },
-            ],
-        }
-      - {
-          name: crd2,
-          label: Card 2,
-          widget: object,
-          fields:
-            [
-              {
-                name: tkn1,
-                label: Token 1,
-                widget: image,
-                upload_url: /images/tokens,
-              },
-              { name: tkr1, label: Ticker 1, widget: string },
-              {
-                name: tkn2,
-                label: Token 2,
-                widget: image,
-                upload_url: /images/tokens,
-              },
-              { name: tkr2, label: Ticker 2, widget: string },
-              { name: apr, label: APR, widget: string },
-              { name: tvl, label: TVL, widget: string },
-            ],
-        }
+      - { name: crd1, label: Card 1, widget: object, fields: [<<: *apr_fields] }
+      - { name: crd2, label: Card 2, widget: object, fields: [<<: *apr_fields] }
+      - { name: crd3, label: Card 3, widget: object, fields: [<<: *apr_fields] }
