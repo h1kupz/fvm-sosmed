@@ -29,8 +29,8 @@ const { entry } = Astro.props;
                         alt={entry.data.item1.tkr1}
                         class="token h-52 mb-4"
                     />
-                    <h3 class="text-5xl">{entry.data.item1.ttl1}</h3>
-                    <h4 class="m-0">{entry.data.item1.tkr1}</h4>
+                    <h3 class="text-5xl mb-2">{entry.data.item1.ttl1}</h3>
+                    <h4 class="m-0 normal-case">{entry.data.item1.tkr1}</h4>
                 </div>
                 <div class="flex flex-col items-center">
                     <h6 class="text-lg font-medium">Total:</h6>
@@ -40,7 +40,7 @@ const { entry } = Astro.props;
                         alt="Arrow"
                         class="w-64 mt-5 drop-shadow-v"
                     />
-                    <div class="flex mb-4">
+                    <div class="flex mb-1">
                         <img
                             src={entry.data.item2.tkn1}
                             alt={entry.data.item2.tkr1}
@@ -52,9 +52,9 @@ const { entry } = Astro.props;
                             class="token tokenSml -ml-4"
                         />
                     </div>
-                    <h4 class="m-0">
+                    <p class="m-0 text-center normal-case mt-2">
                         {entry.data.item2.tkr1} / {entry.data.item2.tkr2}
-                    </h4>
+                    </p>
                 </div>
                 <div class="flex flex-col items-center justify-center">
                     <img
@@ -62,8 +62,8 @@ const { entry } = Astro.props;
                         alt={entry.data.item1.tkr2}
                         class="token h-52 mb-4"
                     />
-                    <h3 class="text-5xl">{entry.data.item1.ttl2}</h3>
-                    <h4 class="m-0">{entry.data.item1.tkr2}</h4>
+                    <h3 class="text-5xl mb-2">{entry.data.item1.ttl2}</h3>
+                    <h4 class="m-0 normal-case">{entry.data.item1.tkr2}</h4>
                 </div>
             </div>
             <div
