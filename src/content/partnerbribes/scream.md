@@ -2,7 +2,7 @@
 title: SCREAM
 header: "aaaaaaaa SCREAM "
 bgImage: /images/fantom-partners-bkg2.png
-logo: /images/f0kyr_xg_400x400.jpg
+logo: /images/scream-logotype.png
 total: "2800"
 items: oneBribe
 item1:
