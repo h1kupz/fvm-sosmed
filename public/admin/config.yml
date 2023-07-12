@@ -3,9 +3,9 @@ backend:
   repo: h1kupz/fvm-sosmed
   branch: main
 
-site_url: https://melodious-boba-7cf388.netlify.app
-display_url: https://melodious-boba-7cf388.netlify.app
-logo_url: https://melodious-boba-7cf388.netlify.app/assets/fvm.png
+site_url: https://fvm-sosmed.netlify.app
+display_url: https://fvm-sosmed.netlify.app
+logo_url: https://fvm-sosmed.netlify.app/assets/fvm.png
 
 media_folder: public/images
 public_folder: /images
@@ -26,12 +26,12 @@ collections:
           choose_url: true,
           required: true,
         }
-      - name: cards
+      - name: items
         label: Number of Cards
         widget: select
         options: ["oneCard", "twoCard", "threeCard"]
       - {
-          name: crd1,
+          name: item1,
           label: Card 1,
           widget: object,
           fields:
@@ -45,7 +45,7 @@ collections:
             ],
         }
       - {
-          name: crd2,
+          name: item2,
           label: Card 2,
           widget: object,
           fields:
@@ -59,7 +59,7 @@ collections:
             ],
         }
       - {
-          name: crd3,
+          name: item3,
           label: Card 3,
           widget: object,
           fields:
@@ -70,5 +70,63 @@ collections:
               { name: tkr2, label: Ticker 2, widget: string },
               { name: apr, label: APR, widget: string },
               { name: tvl, label: TVL, widget: string },
+            ],
+        }
+
+  - name: partnerbribes
+    label: Partner Bribes
+    folder: /src/content/partnerbribes
+    format: frontmatter
+    create: true
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: header, label: Header, widget: string }
+      - {
+          name: bgImage,
+          label: Background Image,
+          widget: image,
+          choose_url: true,
+          required: true,
+        }
+      - { name: logo, label: Partner Logo, widget: image }
+      - { name: total, label: Bribe Total, widget: string }
+      - name: items
+        label: Number of Cards
+        widget: select
+        options: ["oneCard", "twoCard", "threeCard"]
+      - {
+          name: item1,
+          label: Bribe Pair 1,
+          widget: object,
+          fields:
+            [
+              { name: tkn1, label: Token 1, widget: image },
+              { name: tkr1, label: Ticker 1, widget: string },
+              { name: tkn2, label: Token 2, widget: image },
+              { name: tkr2, label: Ticker 2, widget: string },
+            ],
+        }
+      - {
+          name: item2,
+          label: Bribe Pair 2,
+          widget: object,
+          fields:
+            [
+              { name: tkn1, label: Token 1, widget: image },
+              { name: tkr1, label: Ticker 1, widget: string },
+              { name: tkn2, label: Token 2, widget: image },
+              { name: tkr2, label: Ticker 2, widget: string },
+            ],
+        }
+      - {
+          name: item3,
+          label: Bribe Pair 3,
+          widget: object,
+          fields:
+            [
+              { name: tkn1, label: Token 1, widget: image },
+              { name: tkr1, label: Ticker 1, widget: string },
+              { name: tkn2, label: Token 2, widget: image },
+              { name: tkr2, label: Ticker 2, widget: string },
             ],
         }

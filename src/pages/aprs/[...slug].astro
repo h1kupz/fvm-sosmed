@@ -22,38 +22,38 @@ const { entry } = Astro.props;
         <h1>{entry.data.header}</h1>
         <div class="flex gap-4 my-auto">
             <Card
-                crds={entry.data.cards}
-                tkn1={entry.data.crd1.tkn1}
-                tkr1={entry.data.crd1.tkr1}
-                tkn2={entry.data.crd1.tkn2}
-                tkr2={entry.data.crd1.tkr2}
-                apr={entry.data.crd1.apr}
-                tvl={entry.data.crd1.tvl}
+                crds={entry.data.items}
+                tkn1={entry.data.item1.tkn1}
+                tkr1={entry.data.item1.tkr1}
+                tkn2={entry.data.item1.tkn2}
+                tkr2={entry.data.item1.tkr2}
+                apr={entry.data.item1.apr}
+                tvl={entry.data.item1.tvl}
             />
             {
-                entry.data.cards === "twoCard" ||
-                entry.data.cards === "threeCard" ? (
+                entry.data.items === "twoCard" ||
+                entry.data.items === "threeCard" ? (
                     <Card
-                        crds={entry.data.cards}
-                        tkn1={entry.data.crd2.tkn1}
-                        tkr1={entry.data.crd2.tkr1}
-                        tkn2={entry.data.crd2.tkn2}
-                        tkr2={entry.data.crd2.tkr2}
-                        apr={entry.data.crd2.apr}
-                        tvl={entry.data.crd2.tvl}
+                        crds={entry.data.items}
+                        tkn1={entry.data.item2.tkn1}
+                        tkr1={entry.data.item2.tkr1}
+                        tkn2={entry.data.item2.tkn2}
+                        tkr2={entry.data.item2.tkr2}
+                        apr={entry.data.item2.apr}
+                        tvl={entry.data.item2.tvl}
                     />
                 ) : null
             }
             {
-                entry.data.cards === "threeCard" && (
+                entry.data.items === "threeCard" && (
                     <Card
-                        crds={entry.data.cards}
-                        tkn1={entry.data.crd3.tkn1}
-                        tkr1={entry.data.crd3.tkr1}
-                        tkn2={entry.data.crd3.tkn2}
-                        tkr2={entry.data.crd3.tkr2}
-                        apr={entry.data.crd3.apr}
-                        tvl={entry.data.crd3.tvl}
+                        crds={entry.data.items}
+                        tkn1={entry.data.item3.tkn1}
+                        tkr1={entry.data.item3.tkr1}
+                        tkn2={entry.data.item3.tkn2}
+                        tkr2={entry.data.item3.tkr2}
+                        apr={entry.data.item3.apr}
+                        tvl={entry.data.item3.tvl}
                     />
                 )
             }

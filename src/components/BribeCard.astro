@@ -1,0 +1,29 @@
+---
+const { logo, total, bribes, tkn1, tkr1, tkn2, tkr2, apr, tvl } = Astro.props;
+---
+
+<div class="card vborder">
+    <div class=`${bribes} cardHead vgradr flex justify-center`>
+        <img src={logo} alt="Partner" class="drop-shadow-v" />
+    </div>
+    <div
+        class=`${bribes} cardHead vgradl rounded-none flex justify-center items-center`
+    >
+        <h2 class="text-8xl">${total}</h2>
+    </div>
+    <div class=`${bribes} cardBody vgradr flex gap-10 px-10 py-4`>
+        <slot />
+    </div>
+</div>
+
+<style>
+    .oneCard {
+        @apply w-[500px];
+    }
+    .twoCard {
+        @apply w-[400px];
+    }
+    .threeCard {
+        @apply w-[350px] p-3;
+    }
+</style>
