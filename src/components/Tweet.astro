@@ -3,10 +3,40 @@ import TweetFoot from "./TweetFoot.astro";
 const { bg } = Astro.props;
 ---
 
-<div
-    style={`background-image: url(${bg});`}
-    class="w-[1200px] h-[675px] overflow-hidden mx-auto drop-shadow-fvm bg-center flex flex-col items-center justify-center gap-4"
->
-    <slot />
-    <TweetFoot />
+<div class="w-[1200px] h-[675px] mx-auto">
+    <div
+        id="tweet"
+        style={`background-image: url(${bg});`}
+        class="h-full overflow-hidden mx-auto bg-center flex flex-col items-center justify-center gap-4"
+    >
+        <slot />
+        <TweetFoot />
+    </div>
 </div>
+<div class="w-full flex justify-center mt-4">
+    <button id="button">Download</button>
+</div>
+
+<script
+    is:inline
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+></script>
+<script
+    is:inline
+    src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
+></script>
+<script
+    is:inline
+    src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.js"
+></script>
+<script is:inline>
+$(document).ready(function () {
+    $("button").click(function () {
+        domtoimage
+            .toBlob(document.getElementById("tweet"))
+            .then(function (blob) {
+                window.saveAs(blob, "tweet.png");
+            });
+    });
+});
+</script>
