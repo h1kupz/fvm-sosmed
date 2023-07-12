@@ -27,10 +27,10 @@
     @apply h-6 w-auto drop-shadow-fvm;
   }
   nav li {
-    @apply px-3 py-2 bg-background/90 text-xs hover:text-vwhite;
+    @apply px-3 py-2 text-xs hover:text-vwhite;
   }
   button {
-    @apply text-xs font-semibold uppercase tracking-wide vgradr hover:vgradl vborder px-2 py-1 drop-shadow-fvm;
+    @apply text-xs font-semibold uppercase tracking-wide bg-lbackground hover:bg-vgreen/50 hover:text-background vborder px-2 py-1 drop-shadow-fvm;
   }
   main {
     @apply pt-10 min-h-screen flex flex-col justify-center;
@@ -78,7 +78,7 @@
   .cardBody {
     @apply rounded-b-3xl p-6 mx-auto;
   }
-  .cardToken {
+  .token {
     @apply rounded-full bg-background h-36 border-2 border-vgreen/60 drop-shadow-v;
   }
   .tokenSml {

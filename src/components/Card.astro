@@ -4,8 +4,8 @@ const { crds, tkn1, tkr1, tkn2, tkr2, apr, tvl } = Astro.props;
 
 <div class="card vborder">
     <div class=`${crds} cardHead vgradl`>
-        <img src={tkn1} alt={tkr1} class="cardToken" />
-        <img src={tkn2} alt={tkr2} class="cardToken -ml-10" />
+        <img src={tkn1} alt={tkr1} class="token" />
+        <img src={tkn2} alt={tkr2} class="token -ml-10" />
         <div class="flex flex-wrap items-center gap-x-2 gap-y-1 ml-auto">
             <img
                 src="/assets/FantomNoBg.png"
@@ -36,7 +36,7 @@ const { crds, tkn1, tkr1, tkn2, tkr2, apr, tvl } = Astro.props;
     .cardBody {
         @apply rounded-b-3xl p-6 mx-auto;
     }
-    .cardToken {
+    .token {
         @apply rounded-full bg-background h-36 border-2 border-vgreen/40 drop-shadow-v;
     }
     .oneCard {

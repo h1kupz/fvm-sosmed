@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 
+const partner = await getCollection("partnerships");
 const allAprs = await getCollection("aprs");
 const pb = await getCollection("partnerbribes");
 ---
@@ -15,6 +16,18 @@ const pb = await getCollection("partnerbribes");
     </h4>
   </a>
   <div class="flex gap-1">
+    <div class="dropdown">
+      <button>Partnerships</button>
+      <ul class="dropdown-menu">
+        {
+          partner.map((prtnr) => (
+            <li>
+              <a href={"/partnerships/" + prtnr.slug}>{prtnr.data.title}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
     <div class="dropdown">
       <button>APRs</button>
       <ul class="dropdown-menu">
@@ -44,7 +57,7 @@ const pb = await getCollection("partnerbribes");
 
 <style>
   .dropdown-menu {
-    @apply absolute pt-2 hidden;
+    @apply absolute w-full rounded-bl-md py-2 bg-background/90 hidden;
   }
   .dropdown:hover .dropdown-menu {
     @apply block;

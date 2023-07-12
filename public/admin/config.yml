@@ -11,6 +11,23 @@ media_folder: public/images
 public_folder: /images
 
 collections:
+  - name: partnerships
+    label: Partnerships
+    folder: /src/content/partnerships
+    format: frontmatter
+    create: true
+    fields:
+      - { name: title, label: Title, widget: string }
+      - {
+          name: bgImage,
+          label: Background Image,
+          widget: image,
+          choose_url: true,
+          required: true,
+        }
+      - { name: tLogo, label: Top Partner Logo, widget: image }
+      - { name: logo, label: Main Partner Logo, widget: image }
+
   - name: aprs
     label: APRs
     folder: /src/content/aprs
