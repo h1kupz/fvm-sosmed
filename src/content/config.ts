@@ -78,7 +78,6 @@ const matchedbribes = defineCollection({
     type: 'content', // v2.5.0 and later
     schema: z.object({
         title: z.string(),
-        header: z.string(),
         bgImage: z.string(),
         logo: z.string(),
         total: z.string(),

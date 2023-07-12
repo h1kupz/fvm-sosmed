@@ -1,6 +1,5 @@
 ---
 title: mpx
-header: Testing out V2. Now in Astro!
 bgImage: /images/blackhole2.png
 logo: /images/morphex_full_black.png
 total: 16,000
