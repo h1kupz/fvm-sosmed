@@ -60,17 +60,17 @@
 
 @layer components {
   .vgradl {
-    @apply bg-gradient-to-l from-background/60 to-vgreen/50;
+    @apply bg-gradient-to-l from-background/90 to-vgreen/20;
   }
   .vgradr {
-    @apply bg-gradient-to-r from-background/50 to-lbackground/40;
+    @apply bg-gradient-to-r from-background/90 to-vgreen/5;
   }
   .vborder {
     @apply border-2 border-vgreen/30;
   }
 
   .card {
-    @apply drop-shadow-fvm rounded-3xl;
+    @apply rounded-3xl drop-shadow-fvm;
   }
   .cardHead {
     @apply rounded-t-3xl p-5 mx-auto h-28;

@@ -23,6 +23,7 @@ module.exports = {
 			dropShadow: {
 				v: "6px 6px 6px rgba(0, 0, 0, 0.75)",
 				fvm: "1px 1px 3px rgba(0, 232, 202, 0.35)",
+				fvmlg: "1px 1px 3px rgba(0, 232, 202, 0.8)",
 			},
 		},
 	},

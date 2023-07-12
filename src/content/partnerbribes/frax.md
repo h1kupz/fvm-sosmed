@@ -3,7 +3,7 @@ title: Frax
 header: Frax Finance Bribes for Epoch 2
 bgImage: /images/fantom-partners-bkg2.png
 logo: /images/frax-logotype-white.png
-total: 0,000
+total: 1,500
 items: threeBribe
 item1:
   tkn1: /images/usdc.jpg
