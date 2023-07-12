@@ -91,9 +91,9 @@ collections:
       - { name: logo, label: Partner Logo, widget: image }
       - { name: total, label: Bribe Total, widget: string }
       - name: items
-        label: Number of Cards
+        label: Number Pairs Bribed
         widget: select
-        options: ["oneCard", "twoCard", "threeCard"]
+        options: ["oneBribe", "twoBribe", "threeBribe"]
       - {
           name: item1,
           label: Bribe Pair 1,
