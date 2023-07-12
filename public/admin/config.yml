@@ -148,19 +148,19 @@ collections:
             ],
         }
 
-      - name: totalbribes
-        label: Total Bribes
-        folder: /src/content/totalbribes
-        format: frontmatter
-        create: true
-        fields:
-          - { name: title, label: Title, widget: string }
-          - {
-              name: bgImage,
-              label: Background Image,
-              widget: image,
-              choose_url: true,
-              required: true,
-            }
-          - { name: epoch, label: Epoch, widget: string }
-          - { name: total, label: Total Bribes, widget: string }
+  - name: totalbribes
+    label: Total Bribes
+    folder: /src/content/totalbribes
+    format: frontmatter
+    create: true
+    fields:
+      - { name: title, label: Title, widget: string }
+      - {
+          name: bgImage,
+          label: Background Image,
+          widget: image,
+          choose_url: true,
+          required: true,
+        }
+      - { name: epoch, label: Epoch, widget: string }
+      - { name: total, label: Total Bribes, widget: string }
