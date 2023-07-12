@@ -1,5 +1,5 @@
 ---
-import Card from "../../components/Card.astro";
+import AprCard from "../../components/AprCard.astro";
 import Tweet from "../../components/Tweet.astro";
 import TweetHead from "../../components/TweetHead.astro";
 import Layout from "../../layouts/Layout.astro";
@@ -21,7 +21,7 @@ const { entry } = Astro.props;
         <TweetHead />
         <h1>{entry.data.header}</h1>
         <div class="flex gap-4 my-auto">
-            <Card
+            <AprCard
                 crds={entry.data.items}
                 tkn1={entry.data.item1.tkn1}
                 tkr1={entry.data.item1.tkr1}
@@ -33,7 +33,7 @@ const { entry } = Astro.props;
             {
                 entry.data.items === "twoCard" ||
                 entry.data.items === "threeCard" ? (
-                    <Card
+                    <AprCard
                         crds={entry.data.items}
                         tkn1={entry.data.item2.tkn1}
                         tkr1={entry.data.item2.tkr1}
@@ -46,7 +46,7 @@ const { entry } = Astro.props;
             }
             {
                 entry.data.items === "threeCard" && (
-                    <Card
+                    <AprCard
                         crds={entry.data.items}
                         tkn1={entry.data.item3.tkn1}
                         tkr1={entry.data.item3.tkr1}

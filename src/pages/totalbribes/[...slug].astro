@@ -18,7 +18,7 @@ const { entry } = Astro.props;
 <Layout title={entry.data.title}>
     <Tweet bg={entry.data.bgImage}>
         <TweetHead />
-        <div class="card vborder backdrop-blur-v">
+        <div class="card vborder">
             <div class="cardHead vgradl flex justify-center h-auto py-3">
                 <h5 class="text-2xl">Epoch # {entry.data.epoch}</h5>
             </div>

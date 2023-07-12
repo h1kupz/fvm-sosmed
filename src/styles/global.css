@@ -27,7 +27,7 @@
     @apply h-6 w-auto drop-shadow-fvm;
   }
   nav li {
-    @apply px-3 py-2 text-xs hover:text-vwhite;
+    @apply px-3 py-2 text-xs hover:text-vwhite hover:bg-background/40;
   }
   button {
     @apply text-xs font-semibold uppercase tracking-wide bg-lbackground hover:bg-vgreen/50 hover:text-background vborder px-2 py-1 drop-shadow-fvm;
@@ -73,7 +73,7 @@
   }
 
   .card {
-    @apply rounded-3xl drop-shadow-fvm;
+    @apply rounded-3xl drop-shadow-fvm backdrop-blur-v;
   }
   .cardHead {
     @apply rounded-t-3xl p-5 mx-auto h-28;

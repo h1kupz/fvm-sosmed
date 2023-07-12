@@ -1,4 +1,5 @@
 ---
+import Partners from "../../components/Partners.astro";
 import Tweet from "../../components/Tweet.astro";
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
@@ -16,13 +17,7 @@ const { entry } = Astro.props;
 
 <Layout title={entry.data.title}>
     <Tweet bg={entry.data.bgImage}>
-        <div
-            class="flex items-center justify-center gap-5 w-full h-10 mt-8 px-8 mb-auto drop-shadow-fvm"
-        >
-            <img src={entry.data.tLogo} alt="Partner" class="h-10" />
-            <img src="/assets/handshake.png" alt="Handshake" class="h-6" />
-            <img src="/assets/fvm.png" alt="By Velocimeter" class="h-10" />
-        </div>
+        <Partners partner={entry.data.tLogo} />
         <div class="flex gap-10">
             <img src={entry.data.logo} alt="Partner" class="token h-[400px]" />
             <img src="/assets/cross.svg" alt="X" />

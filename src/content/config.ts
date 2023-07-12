@@ -74,6 +74,32 @@ const partnerbribes = defineCollection({
     }),
 });
 
+const matchedbribes = defineCollection({
+    type: 'content', // v2.5.0 and later
+    schema: z.object({
+        title: z.string(),
+        header: z.string(),
+        bgImage: z.string(),
+        logo: z.string(),
+        total: z.string(),
+        item1: z.object({
+            tkn1: z.string(),
+            tkr1: z.string(),
+            ttl1: z.string(),
+            tkn2: z.string(),
+            tkr2: z.string(),
+            ttl2: z.string(),
+        }),
+        item2: z.object({
+            tkn1: z.string(),
+            tkr1: z.string(),
+            tkn2: z.string(),
+            tkr2: z.string(),
+            apr: z.string(),
+        })
+    }),
+});
+
 const totalbribes = defineCollection({
     type: 'content', // v2.5.0 and later
     schema: z.object({
@@ -85,5 +111,5 @@ const totalbribes = defineCollection({
 });
 
 export const collections = {
-    'partnerships': partnerships, 'aprs': aprs, 'partnerbribes': partnerbribes, 'totalbribes': totalbribes,
+    'partnerships': partnerships, 'aprs': aprs, 'partnerbribes': partnerbribes, 'matchedbribes': matchedbribes, 'totalbribes': totalbribes,
 };

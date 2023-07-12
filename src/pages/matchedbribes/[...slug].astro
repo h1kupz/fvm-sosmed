@@ -1,0 +1,78 @@
+---
+import Tweet from "../../components/Tweet.astro";
+import TweetHead from "../../components/TweetHead.astro";
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+    const collection = await getCollection("matchedbribes");
+    return collection.map((entry) => ({
+        params: { slug: entry.slug },
+        props: { entry },
+    }));
+}
+
+const { entry } = Astro.props;
+---
+
+<Layout title={entry.data.title}>
+    <Tweet bg={entry.data.bgImage}>
+        <TweetHead />
+        <div class="card h-auto vborder">
+            <div class="cardHead h-12 vgradl py-3">
+                <h5 class="text-center">Bribe Matched</h5>
+            </div>
+            <div class="vgradr vborder border-x-0 flex px-8 py-4">
+                <div class="flex flex-col items-center justify-center">
+                    <img
+                        src={entry.data.item1.tkn1}
+                        alt={entry.data.item1.tkr1}
+                        class="token h-52 mb-4"
+                    />
+                    <h3 class="text-5xl">{entry.data.item1.ttl1}</h3>
+                    <h4 class="m-0">{entry.data.item1.tkr1}</h4>
+                </div>
+                <div class="flex flex-col items-center">
+                    <h6 class="text-lg font-medium">Total:</h6>
+                    <h2>{entry.data.total}</h2>
+                    <img
+                        src="/assets/Arrow.png"
+                        alt="Arrow"
+                        class="w-64 mt-5 drop-shadow-v"
+                    />
+                    <div class="flex mb-4">
+                        <img
+                            src={entry.data.item2.tkn1}
+                            alt={entry.data.item2.tkr1}
+                            class="token tokenSml"
+                        />
+                        <img
+                            src={entry.data.item2.tkn2}
+                            alt={entry.data.item2.tkr2}
+                            class="token tokenSml -ml-4"
+                        />
+                    </div>
+                    <h4 class="m-0">
+                        {entry.data.item2.tkr1} / {entry.data.item2.tkr2}
+                    </h4>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <img
+                        src={entry.data.item1.tkn2}
+                        alt={entry.data.item1.tkr2}
+                        class="token h-52 mb-4"
+                    />
+                    <h3 class="text-5xl">{entry.data.item1.ttl2}</h3>
+                    <h4 class="m-0">{entry.data.item1.tkr2}</h4>
+                </div>
+            </div>
+            <div
+                class="vgradl rounded-b-3xl h-14 flex items-center justify-center"
+            >
+                <h3>
+                    Projected APR: {entry.data.item2.apr}%
+                </h3>
+            </div>
+        </div>
+    </Tweet>
+</Layout>

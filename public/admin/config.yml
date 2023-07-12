@@ -148,6 +148,49 @@ collections:
             ],
         }
 
+  - name: matchedbribes
+    label: Matched Bribes
+    folder: /src/content/matchedbribes
+    format: frontmatter
+    create: true
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: header, label: Header, widget: string }
+      - {
+          name: bgImage,
+          label: Background Image,
+          widget: image,
+          choose_url: true,
+          required: true,
+        }
+      - { name: total, label: Total, widget: string }
+      - {
+          name: item1,
+          label: Bribes,
+          widget: object,
+          fields:
+            [
+              { name: tkn1, label: Token 1, widget: image },
+              { name: tkr1, label: Ticker 1, widget: string },
+              { name: ttl1, label: Total 1, widget: string },
+              { name: tkn2, label: Token 2, widget: image },
+              { name: tkr2, label: Ticker 2, widget: string },
+              { name: ttl2, label: Total 2, widget: string },
+            ],
+        }
+      - {
+          name: item2,
+          label: Pair,
+          widget: object,
+          fields:
+            [
+              { name: tkn1, label: Token 1, widget: image },
+              { name: tkr1, label: Ticker 1, widget: string },
+              { name: tkn2, label: Token 2, widget: image },
+              { name: tkr2, label: Ticker 2, widget: string },
+            ],
+        }
+
   - name: totalbribes
     label: Total Bribes
     folder: /src/content/totalbribes
