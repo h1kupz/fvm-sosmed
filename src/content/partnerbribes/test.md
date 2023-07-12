@@ -18,6 +18,6 @@ item2:
 item3:
   tkn1: /images/frax-frax-logo.png
   tkr1: FRAX
-  tkn2: /images/ern_logo_dark.svg
-  tkr2: FXS
+  tkn2: /images/ern_logo_dark_bg.svg
+  tkr2: ERN
 ---
