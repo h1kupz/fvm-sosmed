@@ -1,6 +1,8 @@
 ---
 title: Single
-header: Testing out V2. Now in Astro!
+header1: "Testing out V2. Now in Astro!"
+header2: ""
+header3: ""
 bgImage: /images/blackhole2.png
 items: oneCard
 item1:

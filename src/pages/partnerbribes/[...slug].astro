@@ -20,7 +20,9 @@ const { entry } = Astro.props;
 <Layout title={entry.data.title}>
     <Tweet bg={entry.data.bgImage}>
         <TweetHead />
-        <h5>{entry.data.header}</h5>
+        <div class="flex flex-col gap-3">
+            <h4 class="text-center">{entry.data.header}</h4>
+        </div>
         <div class="flex gap-2">
             <BribeCard
                 logo={entry.data.logo}

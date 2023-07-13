@@ -88,6 +88,6 @@
     @apply rounded-full bg-background h-32 border-2 border-vgreen/60 drop-shadow-v;
   }
   .tokenSml {
-    @apply h-20;
+    @apply h-24;
   }
 }
