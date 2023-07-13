@@ -56,6 +56,9 @@
   h6 {
     @apply font-roboto text-xs normal-case tracking-wide text-center leading-none drop-shadow-v;
   }
+  p {
+    @apply normal-case font-semibold;
+  }
 }
 
 @layer components {
