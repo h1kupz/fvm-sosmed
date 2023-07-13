@@ -1,7 +1,8 @@
 ---
 title: Three LZ Pairs
-header: "Four Pillars Of Fantom: Velocimeter is building back better w/ deep
-  liquidity for foundational assets powered by LayerZero on Fantom"
+header1: Back To Basics
+header2: Velocimeter Is Designed To Incentivize Deep Sustainable Liquidity
+header3: " Foundational assets powered by LayerZero on Fantom"
 bgImage: /images/blackhole2.png
 items: threeCard
 item1:
@@ -25,4 +26,6 @@ item3:
   tkr2: ETH
   apr: "172"
   tvl: 279,000
+header: "Four Pillars Of Fantom: Velocimeter is building back better w/ deep
+  liquidity for foundational assets powered by LayerZero on Fantom"
 ---
