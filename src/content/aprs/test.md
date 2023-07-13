@@ -1,6 +1,7 @@
 ---
 title: Three LZ Pairs
-header: Building deep liquidity for foundational assets powered by LayerZero on Fantom
+header: "Four Pillars Of Fantom: Velocimeter is building back better w/ deep
+  liquidity for foundational assets powered by LayerZero on Fantom"
 bgImage: /images/blackhole2.png
 items: threeCard
 item1:
