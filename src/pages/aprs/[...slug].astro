@@ -19,8 +19,8 @@ const { entry } = Astro.props;
 <Layout title={entry.data.title}>
     <Tweet bg={entry.data.bgImage}>
         <TweetHead />
-        <h1>{entry.data.header}</h1>
-        <div class="flex gap-4 my-auto">
+        <h5 class="text-center">{entry.data.header}</h5>
+        <div class="flex gap-4">
             <AprCard
                 crds={entry.data.items}
                 tkn1={entry.data.item1.tkn1}

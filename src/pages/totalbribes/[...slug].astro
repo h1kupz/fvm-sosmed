@@ -20,15 +20,15 @@ const { entry } = Astro.props;
         <TweetHead />
         <div class="card vborder">
             <div class="cardHead vgradl flex justify-center h-auto py-3">
-                <h5 class="text-2xl">Epoch # {entry.data.epoch}</h5>
+                <h5>Epoch # {entry.data.epoch}</h5>
             </div>
             <div
-                class="rounded-none flex justify-center items-center vborder border-x-0 p-10"
+                class="flex justify-center items-center vborder border-x-0 p-10"
             >
                 <h2 class="text-[200px]">$ {entry.data.total}</h2>
             </div>
             <div class="cardBody vgradr flex justify-center gap-5 px-10 py-4">
-                <h5 class="text-3xl">In Bribes Available</h5>
+                <h3>In Bribes Available</h3>
             </div>
         </div>
     </Tweet>
