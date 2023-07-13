@@ -1,6 +1,6 @@
 ---
 title: Three LZ Pairs
-header: The basics.
+header: Building deep liquidity for foundational assets powered by LayerZero on Fantom
 bgImage: /images/blackhole2.png
 items: threeCard
 item1:
