@@ -2,7 +2,7 @@
 title: Three LZ Pairs
 header1: Back To Basics
 header2: Velocimeter Is Designed To Incentivize Deep Sustainable Liquidity
-header3: " Foundational assets powered by LayerZero on Fantom"
+header3: " Helping to attract these foundational assets powered by LayerZero to Fantom"
 bgImage: /images/blackhole2.png
 items: threeCard
 item1:
