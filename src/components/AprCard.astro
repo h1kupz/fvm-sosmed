@@ -18,11 +18,11 @@ const { crds, tkn1, tkr1, tkn2, tkr2, apr, tvl } = Astro.props;
             </div>
         </div>
     </div>
-    <div class=`${crds} cardBody vgradr`>
-        <h4>~Apr</h4>
-        <h2>{apr}%</h2>
+    <div class=`${crds} cardBody vgradr flex flex-col gap-2`>
+        <h4 class="uppercase mb-0">~Apr</h4>
+        <h2 class="text-7xl mb-0">{apr}%</h2>
         <h3>{tkr1} / {tkr2}</h3>
-        <h4>Current TVL: ~${tvl}</h4>
+        <h6>Current TVL: ~${tvl}</h6>
     </div>
 </div>
 

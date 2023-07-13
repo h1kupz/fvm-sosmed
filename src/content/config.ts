@@ -14,7 +14,9 @@ const aprs = defineCollection({
     type: 'content', // v2.5.0 and later
     schema: z.object({
         title: z.string(),
-        header: z.string(),
+        header1: z.string().optional(),
+        header2: z.string().optional(),
+        header3: z.string().optional(),
         bgImage: z.string(),
         items: z.string(),
         item1: z.object({

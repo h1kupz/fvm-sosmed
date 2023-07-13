@@ -15,7 +15,7 @@
 
 @layer base {
   body {
-    @apply min-h-screen font-inter uppercase tracking-widest text-vgreen bg-[url('/images/background10.png')] bg-cover;
+    @apply min-h-screen font-inter tracking-widest text-vgreen bg-[url('/images/background10.png')] bg-cover;
   }
   header {
     @apply flex w-full h-10 fixed top-0 z-40;
@@ -39,22 +39,22 @@
     @apply w-[1200px] h-[675px] overflow-hidden mx-auto drop-shadow-fvm;
   }
   h1 {
-    @apply text-4xl normal-case font-bold tracking-wide leading-tight drop-shadow-v;
+    @apply text-4xl normal-case font-bold tracking-wide drop-shadow-v mb-0 leading-none;
   }
   h2 {
-    @apply text-7xl font-extrabold leading-none mb-2 drop-shadow-v text-right;
+    @apply text-4xl font-extrabold leading-none drop-shadow-v text-right;
   }
   h3 {
     @apply text-3xl normal-case font-bold tracking-wider leading-none mb-1 drop-shadow-v text-right;
   }
   h4 {
-    @apply text-xl font-bold uppercase leading-none mt-4 mb-2 drop-shadow-v text-right;
+    @apply text-2xl font-semibold leading-none drop-shadow-v text-right;
   }
   h5 {
     @apply font-roboto font-medium text-2xl normal-case tracking-wide drop-shadow-v;
   }
   h6 {
-    @apply font-roboto text-xs normal-case tracking-wide text-center leading-none drop-shadow-v;
+    @apply font-roboto  text-lg normal-case tracking-wide text-right leading-none drop-shadow-v;
   }
   p {
     @apply normal-case font-semibold;
@@ -85,7 +85,7 @@
     @apply rounded-b-3xl p-6 mx-auto;
   }
   .token {
-    @apply rounded-full bg-background h-36 border-2 border-vgreen/60 drop-shadow-v;
+    @apply rounded-full bg-background h-32 border-2 border-vgreen/60 drop-shadow-v;
   }
   .tokenSml {
     @apply h-20;
