@@ -1,28 +1,27 @@
 ---
-title: Test
-header: Testing out V2. Now in Astro!
+title: Three LZ Pairs
+header: The basics.
 bgImage: /images/blackhole2.png
 items: threeCard
 item1:
-    tkn1: /images/FantomEventLogo.jpg
-    tkr1: FTM
-    tkn2: /images/FVM-token-blu.png
-    tkr2: oFVM
-    apr: "000"
-    tvl: "000"
+  tkn1: /images/FantomEventLogo.jpg
+  tkr1: FTM
+  tkn2: /images/eth.png
+  tkr2: WETH
+  apr: "73"
+  tvl: 844,000
 item2:
-    tkn1: /images/eth.png
-    tkr1: lzETH
-    tkn2: /images/FVM-token-blu.png
-    tkr2: oFVM
-    apr: "000"
-    tvl: "000"
+  tkn1: /images/usdt.png
+  tkr1: USDT
+  tkn2: /images/usdc.jpg
+  tkr2: USDC
+  apr: "198"
+  tvl: 230,000
 item3:
-    tkn1: /images/frax-frax-logo.png
-    tkr1: FRAX
-    tkn2: /images/FVM-token-blu.png
-    tkr2: oFVM
-    apr: "000"
-    tvl: "000"
+  tkn1: /images/btc.png
+  tkr1: WBTC
+  tkn2: /images/eth.png
+  tkr2: ETH
+  apr: "172"
+  tvl: 279,000
 ---
-
