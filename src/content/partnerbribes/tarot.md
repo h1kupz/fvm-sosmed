@@ -1,9 +1,9 @@
 ---
 title: Tarot
-header: Tarot
+header: I see bribes on the cards
 bgImage: /images/bg-1.png
 logo: /images/tarot-200px.webp
-total: "500"
+total: "3887"
 items: oneBribe
 item1:
   tkn1: /images/FVM-token-blu.png
