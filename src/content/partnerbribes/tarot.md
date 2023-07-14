@@ -2,14 +2,14 @@
 title: Tarot
 header: I see bribes on the cards
 bgImage: /images/bg-1.png
-logo: /images/tarot-200px.webp
+logo: /images/spaces_-mfepxyooq4gzkdxdyjh_uploads_rtdp7zqcdobwpd4uoksu_tarot-logo-light-bg-horizontal-with-bg.webp
 total: "3887"
 items: oneBribe
 item1:
-  tkn1: /images/FVM-token-blu.png
+  tkn1: /images/FantomEventLogo.jpg
   tkr1: XEX
   tkr2: WFTM
-  tkn2: /images/x6lgjqwo_400x400.jpg
+  tkn2: /images/tarot-200px.webp
 item2:
   tkn1: /images/x6lgjqwo_400x400.jpg
   tkr1: d
