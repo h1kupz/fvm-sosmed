@@ -6,7 +6,7 @@ logo: /images/x6lgjqwo_400x400.jpg
 total: "500"
 items: oneBribe
 item1:
-  tkn1: /images/x6lgjqwo_400x400.jpg
+  tkn1: /images/FantomEventLogo.jpg
   tkr1: XEX
   tkr2: WFTM
   tkn2: /images/x6lgjqwo_400x400.jpg
