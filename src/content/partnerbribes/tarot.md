@@ -7,8 +7,8 @@ total: "3887"
 items: oneBribe
 item1:
   tkn1: /images/FantomEventLogo.jpg
-  tkr1: XEX
-  tkr2: WFTM
+  tkr1: WFTM
+  tkr2: TAROT
   tkn2: /images/tarot-200px.webp
 item2:
   tkn1: /images/x6lgjqwo_400x400.jpg
