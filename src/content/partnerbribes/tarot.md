@@ -2,7 +2,7 @@
 title: Tarot
 header: I see bribes on the cards
 bgImage: /images/bg-1.png
-logo: /images/spaces_-mfepxyooq4gzkdxdyjh_uploads_rtdp7zqcdobwpd4uoksu_tarot-logo-light-bg-horizontal-with-bg.webp
+logo: /images/spaces_-mfepxyooq4gzkdxdyjh_uploads_n866ysam6neggnrojvro_tarot-logo-dark-bg-horizontal.webp
 total: "3887"
 items: oneBribe
 item1:
