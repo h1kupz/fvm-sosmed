@@ -1,10 +1,23 @@
 ---
-const { total, tkn1, tkr1, ttl1, tkn2, tkr2, ttl2, ptkr1, ptkr2, apr } =
-    Astro.props;
+const {
+    briber,
+    logo,
+    total,
+    tkn1,
+    tkr1,
+    ttl1,
+    tkn2,
+    tkr2,
+    ttl2,
+    ptkr1,
+    ptkr2,
+    apr,
+} = Astro.props;
 ---
 
 <div class="card h-auto vborder">
-    <div class="cardHead h-auto vgradr py-3">
+    <div class="cardHead h-auto vgradr py-3 flex items-center justify-between">
+        <img src={logo} alt={briber} class="h-16" />
         <h2 class="text-center">Bribe Matched</h2>
     </div>
     <div class="bg-lbackground/30 vborder border-x-0 flex px-8 py-4">

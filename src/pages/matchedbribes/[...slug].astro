@@ -20,6 +20,8 @@ const { entry } = Astro.props;
     <Tweet bg={entry.data.bgImage}>
         <TweetHead />
         <MatchBribeCard
+            briber={entry.data.briber}
+            logo={entry.data.logo}
             total={entry.data.total}
             tkn1={entry.data.item1.tkn1}
             tkr1={entry.data.item1.tkr1}
