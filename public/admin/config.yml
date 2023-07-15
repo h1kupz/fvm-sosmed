@@ -166,7 +166,6 @@ collections:
         }
       - { name: briber, label: Briber, widget: string }
       - { name: logo, label: Logo, widget: image }
-      - { name: header, label: Header, widget: string }
       - { name: total, label: Total, widget: string }
       - {
           name: item1,

@@ -91,7 +91,6 @@ const matchedbribes = defineCollection({
     bgImage: z.string(),
     briber: z.string().optional(),
     logo: z.string().optional(),
-    header: z.string().optional(),
     total: z.string(),
     item1: z.object({
       tkn1: z.string(),
