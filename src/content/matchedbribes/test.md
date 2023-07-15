@@ -3,6 +3,7 @@ title: Test
 bgImage: /images/bg-5.png
 briber: Frax
 logo: /images/frax-logotype-white.png
+header: Bribe
 total: "1500"
 item1:
   tkn1: /images/flow-10.png
