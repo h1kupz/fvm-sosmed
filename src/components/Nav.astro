@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 
 const partner = await getCollection("partnerships");
-const allAprs = await getCollection("aprs");
+const aprs = await getCollection("aprs");
 const pb = await getCollection("partnerbribes");
 const mb = await getCollection("matchedbribes");
 const tb = await getCollection("totalbribes");
@@ -34,7 +34,7 @@ const tb = await getCollection("totalbribes");
       <div class="navButton">APRs</div>
       <ul class="dropdown-menu">
         {
-          allAprs.map((apr) => (
+          aprs.map((apr) => (
             <li>
               <a href={"/aprs/" + apr.slug}>{apr.data.title}</a>
             </li>

@@ -1,8 +1,8 @@
 ---
 title: FRAX
 header1: FRAX
-header2: FRAX
-header3: FRAX
+header2: ""
+header3: ""
 bgImage: /images/bg-5.png
 items: threeCard
 item1:
