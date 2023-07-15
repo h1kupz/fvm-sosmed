@@ -165,7 +165,7 @@ collections:
           required: true,
         }
       - { name: briber, label: Briber, widget: string }
-      - { name: logo, label: Logo, widget: string }
+      - { name: logo, label: Logo, widget: image }
       - { name: total, label: Total, widget: string }
       - {
           name: item1,
