@@ -4,7 +4,7 @@ header1: GRAIN
 header2: GRAIN
 header3: GRAIN
 bgImage: /images/background9.png
-items: oneCard
+items: threeCard
 item1:
   tkn1: /images/ern_logo_dark_bg.svg
   tkn2: /images/granary-monogram-yellow-whitebckgrnd-8.png
