@@ -14,11 +14,11 @@ item1:
   tvl: 17,000
 item2:
   tkn1: /images/granary-monogram-yellow-whitebckgrnd-8.png
-  tkr1: asdf
-  tkn2: /images/granary-monogram-yellow-whitebckgrnd-8.png
-  tkr2: asdf
-  apr: afds
-  tvl: af
+  tkr1: GRAIN
+  tkn2: /images/FantomEventLogo.jpg
+  tkr2: WFTM
+  apr: "553"
+  tvl: 21,000
 item3:
   tkn1: /images/granary-monogram-yellow-whitebckgrnd-8.png
   tkr1: sadf
