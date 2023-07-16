@@ -1,8 +1,8 @@
 ---
 title: grain
-header1: grain
-header2: grain
-header3: grain
+header1: GRAIN
+header2: GRAIN
+header3: GRAIN
 bgImage: /images/background9.png
 items: oneCard
 item1:
