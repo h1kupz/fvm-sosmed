@@ -4,7 +4,7 @@ header1: STG-USDC crvUSD
 header2: STG-USDC crvUSD
 header3: STG-USDC crvUSD
 bgImage: /images/background9.png
-items: twoCard
+items: threeCard
 item1:
   tkn1: /images/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png
   tkn2: /images/usdc.jpg
