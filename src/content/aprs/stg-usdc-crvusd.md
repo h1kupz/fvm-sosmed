@@ -22,7 +22,7 @@ item2:
 item3:
   tkn1: /images/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png
   tkr1: sdaf
-  tkn2: /images/stg_logo.webp
+  tkn2: /images/curve.webp
   tkr2: asdf
   apr: asdf
   tvl: afds
