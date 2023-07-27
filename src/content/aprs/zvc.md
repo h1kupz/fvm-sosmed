@@ -15,15 +15,15 @@ item1:
 item2:
   tkn1: /images/mpx_logo_256.webp
   tkr1: MPX
-  tkn2: /images/lqdr_glowing_icon.webp
+  tkn2: /images/FantomEventLogo.jpg
   tkr2: LQDR
-  apr: "400"
-  tvl: 200,000
+  apr: "278"
+  tvl: 185,000
 item3:
-  tkn1: /images/f0kyr_xg_400x400.jpg
-  tkr1: SCREAM
+  tkn1: /images/lqdr_glowing_icon.webp
+  tkr1: LQRD
   tkn2: /images/FantomEventLogo.jpg
   tkr2: FTM
-  apr: "456"
-  tvl: 200,000
+  apr: "278"
+  tvl: 185,000
 ---
