@@ -1,4 +1,5 @@
 ---
+chain: fvm
 title: FVM FTM Bribe
 header: FVM-WFTM Pool Bribe
 bgImage: /images/bg-5.png

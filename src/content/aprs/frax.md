@@ -1,4 +1,5 @@
 ---
+chain: fvm
 title: FRAX
 header1: FRAX
 header2: ""

@@ -1,4 +1,5 @@
 ---
+chain: fvm
 title: FVM-WFTM1
 bgImage: /images/bg-5.png
 total: "1500"

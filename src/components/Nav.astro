@@ -1,91 +1,52 @@
 ---
-import { getCollection } from "astro:content";
-
-const partner = await getCollection("partnerships");
-const aprs = await getCollection("aprs");
-const pb = await getCollection("partnerbribes");
-const mb = await getCollection("matchedbribes");
-const tb = await getCollection("totalbribes");
+import Menu from "./Menu.astro";
 ---
 
 <nav>
-  <a href="/" class="flex items-center gap-3">
-    <img src="/assets/fvm.png" alt="FVM" />
+  <fieldset class="flex w-full gap-4 items-center">
+    <input
+      id="fvm"
+      class="peer/fvm hidden"
+      type="radio"
+      name="status"
+      checked
+    />
+    <input id="mvm" class="peer/mvm hidden" type="radio" name="status" />
+
+    <div class="hidden peer-checked/fvm:block">
+      <a href="/" class="flex items-center gap-3">
+        <img src="/assets/fvm.png" alt="FVM" />
+      </a>
+    </div>
+
+    <div class="hidden peer-checked/mvm:block">
+      <a href="/" class="flex items-center gap-3">
+        <img src="/assets/mvm.png" alt="mvm" />
+      </a>
+    </div>
+
     <h4
-      class="text-left font-light text-[22px] leading-none mb-[2px] drop-shadow-fvm"
+      class="text-left font-light text-[22px] leading-none mb-[2px] drop-shadow-fvm mr-auto"
     >
       Sosmed
     </h4>
-  </a>
-  <div class="flex gap-1">
-    <div class="dropdown">
-      <div class="navButton">Partnerships</div>
-      <ul class="dropdown-menu">
-        {
-          partner.map((prtnr) => (
-            <li>
-              <a href={"/partnerships/" + prtnr.slug}>{prtnr.data.title}</a>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
-    <div class="dropdown">
-      <div class="navButton">APRs</div>
-      <ul class="dropdown-menu">
-        {
-          aprs.map((apr) => (
-            <li>
-              <a href={"/aprs/" + apr.slug}>{apr.data.title}</a>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
-    <div class="dropdown">
-      <div class="navButton">Partner Bribes</div>
-      <ul class="dropdown-menu">
-        {
-          pb.map((pb) => (
-            <li>
-              <a href={"/partnerbribes/" + pb.slug}>{pb.data.title}</a>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
-    <div class="dropdown">
-      <div class="navButton">Matched Bribes</div>
-      <ul class="dropdown-menu">
-        {
-          mb.map((mb) => (
-            <li>
-              <a href={"/matchedbribes/" + mb.slug}>{mb.data.title}</a>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
-    <div class="dropdown">
-      <div class="navButton">Total Bribes</div>
-      <ul class="dropdown-menu">
-        {
-          tb.map((tb) => (
-            <li>
-              <a href={"/totalbribes/" + tb.slug}>{tb.data.title}</a>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
-  </div>
-</nav>
 
-<style>
-  .dropdown-menu {
-    @apply absolute w-full rounded-bl-md py-2 bg-lbackground/80 backdrop-blur-v hidden;
-  }
-  .dropdown:hover .dropdown-menu {
-    @apply block;
-  }
-</style>
+    <label
+      for="fvm"
+      class="text-vwhite peer-checked/fvm:text-vgreen peer-checked/fvm:font-black cursor-pointer"
+      >FVM</label
+    >
+    <label
+      for="mvm"
+      class="text-vwhite peer-checked/mvm:text-vgreen peer-checked/mvm:font-black cursor-pointer"
+      >MVM</label
+    >
+
+    <div class="hidden peer-checked/fvm:block">
+      <Menu chain="fvm" />
+    </div>
+    <div class="hidden peer-checked/mvm:block">
+      <Menu chain="mvm" />
+    </div>
+  </fieldset>
+</nav>

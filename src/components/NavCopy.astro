@@ -1,0 +1,95 @@
+---
+import { getCollection } from "astro:content";
+
+const partner = await getCollection("partnerships");
+const aprs = await getCollection("aprs");
+const pb = await getCollection("partnerbribes");
+const mb = await getCollection("matchedbribes");
+const tb = await getCollection("totalbribes");
+---
+
+<nav>
+  <a href="/" class="flex items-center gap-3">
+    <img src="/assets/fvm.png" alt="FVM" />
+    <h4
+      class="text-left font-light text-[22px] leading-none mb-[2px] drop-shadow-fvm"
+    >
+      Sosmed
+    </h4>
+  </a>
+  <input type="checkbox" class="checked:bg-primary fvm-toggle" />
+  <div class="flex gap-1 fvm-menu">
+    <div class="dropdown">
+      <div class="navButton">Partnerships</div>
+      <ul class="dropdown-menu">
+        {
+          partner.map((prtnr) => (
+            <li>
+              <a href={"/partnerships/" + prtnr.slug}>{prtnr.data.title}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="dropdown">
+      <div class="navButton">APRs</div>
+      <ul class="dropdown-menu">
+        {
+          aprs.map((apr) => (
+            <li>
+              <a href={"/aprs/" + apr.slug}>{apr.data.title}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="dropdown">
+      <div class="navButton">Partner Bribes</div>
+      <ul class="dropdown-menu">
+        {
+          pb.map((pb) => (
+            <li>
+              <a href={"/partnerbribes/" + pb.slug}>{pb.data.title}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="dropdown">
+      <div class="navButton">Matched Bribes</div>
+      <ul class="dropdown-menu">
+        {
+          mb.map((mb) => (
+            <li>
+              <a href={"/matchedbribes/" + mb.slug}>{mb.data.title}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="dropdown">
+      <div class="navButton">Total Bribes</div>
+      <ul class="dropdown-menu">
+        {
+          tb.map((tb) => (
+            <li>
+              <a href={"/totalbribes/" + tb.slug}>{tb.data.title}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .dropdown-menu {
+    @apply absolute w-full rounded-bl-md py-2 bg-lbackground/80 backdrop-blur-v hidden;
+  }
+  .dropdown:hover .dropdown-menu {
+    @apply block;
+  }
+  .fvm-toggle:checked + .fvm-menu {
+    @apply hidden;
+  }
+</style>

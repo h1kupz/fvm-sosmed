@@ -1,4 +1,5 @@
 ---
+chain: fvm
 title: Tarot
 header: I see bribes on the cards
 bgImage: /images/bg-1.png

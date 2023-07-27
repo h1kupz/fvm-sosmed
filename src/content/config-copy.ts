@@ -1,9 +1,8 @@
 import { z, defineCollection } from "astro:content";
-
+// 2. Define your collection(s)
 const partnerships = defineCollection({
-  type: "content",
+  type: "content", // v2.5.0 and later
   schema: z.object({
-    chain: z.string().optional(),
     title: z.string(),
     bgImage: z.string(),
     tLogo: z.string().optional(),
@@ -12,9 +11,8 @@ const partnerships = defineCollection({
 });
 
 const aprs = defineCollection({
-  type: "content",
+  type: "content", // v2.5.0 and later
   schema: z.object({
-    chain: z.string().optional(),
     title: z.string(),
     header1: z.string().optional(),
     header2: z.string().optional(),
@@ -53,9 +51,8 @@ const aprs = defineCollection({
 });
 
 const partnerbribes = defineCollection({
-  type: "content",
+  type: "content", // v2.5.0 and later
   schema: z.object({
-    chain: z.string().optional(),
     title: z.string(),
     header: z.string(),
     bgImage: z.string(),
@@ -88,9 +85,8 @@ const partnerbribes = defineCollection({
 });
 
 const matchedbribes = defineCollection({
-  type: "content",
+  type: "content", // v2.5.0 and later
   schema: z.object({
-    chain: z.string().optional(),
     title: z.string(),
     bgImage: z.string(),
     briber: z.string().optional(),
@@ -115,9 +111,8 @@ const matchedbribes = defineCollection({
 });
 
 const totalbribes = defineCollection({
-  type: "content",
+  type: "content", // v2.5.0 and later
   schema: z.object({
-    chain: z.string().optional(),
     title: z.string(),
     bgImage: z.string(),
     epoch: z.string(),

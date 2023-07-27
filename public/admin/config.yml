@@ -17,7 +17,11 @@ collections:
     format: frontmatter
     create: true
     fields:
-      - { name: title, label: Title, widget: string }
+      - name: chain
+        label: Chain
+        widget: select
+        options: ["fvm", "mvm"]
+      - { name: title, label: Title/Filename (Please add chain to front of title - ie. fvm/cvm/...), widget: string }
       - {
           name: bgImage,
           label: Background Image,
@@ -34,7 +38,11 @@ collections:
     format: frontmatter
     create: true
     fields:
-      - { name: title, label: Title, widget: string }
+      - name: chain
+        label: Chain
+        widget: select
+        options: ["fvm", "mvm"]
+      - { name: title, label: Title/Filename (Please add chain to front of title - ie. fvm/cvm/...), widget: string }
       - { name: header1, label: Header 1, widget: string }
       - { name: header2, label: Header 2, widget: string }
       - { name: header3, label: Header 3, widget: string }
@@ -98,7 +106,11 @@ collections:
     format: frontmatter
     create: true
     fields:
-      - { name: title, label: Title, widget: string }
+      - name: chain
+        label: Chain
+        widget: select
+        options: ["fvm", "mvm"]
+      - { name: title, label: Title/Filename (Please add chain to front of title - ie. fvm/cvm/...), widget: string }
       - { name: header, label: Header, widget: string }
       - {
           name: bgImage,
@@ -156,7 +168,11 @@ collections:
     format: frontmatter
     create: true
     fields:
-      - { name: title, label: Title, widget: string }
+      - name: chain
+        label: Chain
+        widget: select
+        options: ["fvm", "mvm"]
+      - { name: title, label: Title/Filename (Please add chain to front of title - ie. fvm/cvm/...), widget: string }
       - {
           name: bgImage,
           label: Background Image,
@@ -201,7 +217,11 @@ collections:
     format: frontmatter
     create: true
     fields:
-      - { name: title, label: Title, widget: string }
+      - name: chain
+        label: Chain
+        widget: select
+        options: ["fvm", "mvm"]
+      - { name: title, label: Title/Filename (Please add chain to front of title - ie. fvm/cvm/...), widget: string }
       - {
           name: bgImage,
           label: Background Image,

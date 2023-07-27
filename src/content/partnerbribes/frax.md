@@ -1,4 +1,5 @@
 ---
+chain: fvm
 title: Frax
 header: Frax Finance Bribes for Epoch 2
 bgImage: /images/fantom-partners-bkg2.png

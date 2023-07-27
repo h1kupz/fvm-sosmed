@@ -1,4 +1,5 @@
 ---
+chain: fvm
 title: ERN
 header1: FRAX
 header2: FRAX

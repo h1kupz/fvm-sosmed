@@ -1,4 +1,5 @@
 ---
+chain: fvm
 title: XEX
 header: XEX
 bgImage: /images/bg-1.png

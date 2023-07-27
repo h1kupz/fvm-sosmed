@@ -1,4 +1,5 @@
 ---
+chain: fvm
 title: LP FVM-WFTM Earn oFVM + FTM
 header1: LP FVM-WFTM Earn oFVM + FTM
 header2: GRAIN

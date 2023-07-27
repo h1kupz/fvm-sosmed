@@ -1,4 +1,5 @@
 ---
+chain: fvm
 title: STG-USDC crvUSD
 header1: STG-USDC crvUSD
 header2: STG-USDC crvUSD
