@@ -1,38 +1,35 @@
 ---
-const { logo, total, bribes, tkn1, tkr1, tkn2, tkr2, apr, tvl } = Astro.props;
+const { logo, total, bribes } = Astro.props;
 ---
 
 <div class="card vborder">
-    <div class=`${bribes} cardHead vgradl flex justify-center`>
-        <img src={logo} alt="Partner" class="drop-shadow-v" />
-    </div>
-    <div
-        class=`${bribes} rounded-none flex justify-center items-center vborder border-x-0 py-5`
-    >
-        <h2 class="text-8xl">${total}</h2>
-    </div>
-    <div class=`${bribes} cardBody vgradr flex gap-5 px-10 py-4`>
-        <slot />
-    </div>
+  <div class=`${bribes} cardHead vgradl flex justify-center`>
+    <img src={logo} alt="Partner" class="drop-shadow-v" />
+  </div>
+  <div
+    class=`${bribes} rounded-none flex justify-center items-center vborder border-x-0 py-5`
+  >
+    <h2 class="text-8xl">${total}</h2>
+  </div>
+  <div class=`${bribes} cardBody vgradr flex gap-5 px-10 py-4`>
+    <slot />
+  </div>
 </div>
 
 <style>
-    .oneCard {
-        @apply w-[500px];
-    }
-    .twoCard {
-        @apply w-[400px];
-    }
-    .threeCard {
-        @apply w-[350px] p-3;
-    }
-</style>
-
-<style>
-    .oneBribe {
-        @apply !px-20;
-    }
-    .twoBribe {
-        @apply !px-20;
-    }
+  .oneCard {
+    @apply w-[500px];
+  }
+  .twoCard {
+    @apply w-[400px];
+  }
+  .threeCard {
+    @apply w-[350px] p-3;
+  }
+  .oneBribe {
+    @apply !px-20;
+  }
+  .twoBribe {
+    @apply !px-20;
+  }
 </style>

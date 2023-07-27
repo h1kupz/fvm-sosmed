@@ -6,7 +6,7 @@ import TweetFoot from "../../components/TweetFoot.astro";
 import TweetHead from "../../components/TweetHead.astro";
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
-// 1. Generate a new path for every collection entry
+
 export async function getStaticPaths() {
   const collection = await getCollection("partnerbribes");
   return collection.map((entry) => ({
