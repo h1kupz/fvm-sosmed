@@ -1,37 +1,39 @@
 ---
 import MatchBribeCard from "../../components/MatchBribeCard.astro";
 import Tweet from "../../components/Tweet.astro";
+import TweetFoot from "../../components/TweetFoot.astro";
 import TweetHead from "../../components/TweetHead.astro";
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
-// 1. Generate a new path for every collection entry
+
 export async function getStaticPaths() {
-    const collection = await getCollection("matchedbribes");
-    return collection.map((entry) => ({
-        params: { slug: entry.slug },
-        props: { entry },
-    }));
+  const collection = await getCollection("matchedbribes");
+  return collection.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
 }
 
 const { entry } = Astro.props;
 ---
 
 <Layout title={entry.data.title}>
-    <Tweet bg={entry.data.bgImage}>
-        <TweetHead />
-        <MatchBribeCard
-            briber={entry.data.briber}
-            logo={entry.data.logo}
-            total={entry.data.total}
-            tkn1={entry.data.item1.tkn1}
-            tkr1={entry.data.item1.tkr1}
-            ttl1={entry.data.total}
-            tkn2={entry.data.item1.tkn2}
-            tkr2={entry.data.item2.tkr2}
-            ttl2={entry.data.item1.ttl2}
-            ptkr1={entry.data.item2.tkr1}
-            ptkr2={entry.data.item1.tkr2}
-            apr={entry.data.item2.apr}
-        />
-    </Tweet>
+  <Tweet bg={entry.data.bgImage}>
+    <TweetHead chain={entry.data.chain} />
+    <MatchBribeCard
+      briber={entry.data.briber}
+      logo={entry.data.logo}
+      total={entry.data.total}
+      tkn1={entry.data.item1.tkn1}
+      tkr1={entry.data.item1.tkr1}
+      ttl1={entry.data.total}
+      tkn2={entry.data.item1.tkn2}
+      tkr2={entry.data.item2.tkr2}
+      ttl2={entry.data.item1.ttl2}
+      ptkr1={entry.data.item2.tkr1}
+      ptkr2={entry.data.item1.tkr2}
+      apr={entry.data.item2.apr}
+    />
+    <TweetFoot chain={entry.data.chain} />
+  </Tweet>
 </Layout>

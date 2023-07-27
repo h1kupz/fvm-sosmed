@@ -1,31 +1,33 @@
 ---
 import Partners from "../../components/Partners.astro";
 import Tweet from "../../components/Tweet.astro";
+import TweetFoot from "../../components/TweetFoot.astro";
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
-    const collection = await getCollection("partnerships");
-    return collection.map((entry) => ({
-        params: { slug: entry.slug },
-        props: { entry },
-    }));
+  const collection = await getCollection("partnerships");
+  return collection.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
 }
 
 const { entry } = Astro.props;
 ---
 
 <Layout title={entry.data.title}>
-    <Tweet bg={entry.data.bgImage}>
-        <Partners partner={entry.data.tLogo} />
-        <div class="flex gap-10">
-            <img src={entry.data.logo} alt="Partner" class="token h-[400px]" />
-            <img src="/assets/cross.svg" alt="X" />
-            <img
-                src="/images/FVM-token-blu.png"
-                alt="Partner"
-                class="token h-[400px]"
-            />
-        </div>
-    </Tweet>
+  <Tweet bg={entry.data.bgImage}>
+    <Partners partner={entry.data.tLogo} />
+    <div class="flex gap-10">
+      <img src={entry.data.logo} alt="Partner" class="token h-[400px]" />
+      <img src="/assets/cross.svg" alt="X" />
+      <img
+        src="/images/FVM-token-blu.png"
+        alt="Partner"
+        class="token h-[400px]"
+      />
+    </div>
+    <TweetFoot chain={entry.data.chain} />
+  </Tweet>
 </Layout>

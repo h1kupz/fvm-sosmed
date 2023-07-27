@@ -1,7 +1,32 @@
+---
+const { chain } = Astro.props;
+---
+
 <div
-    class="flex items-center justify-between w-full h-16 mt-auto drop-shadow-fvm"
+  class="flex items-center justify-between w-full h-16 mt-auto drop-shadow-fvm"
 >
-    <img src="/assets/FantomNoBg.png" alt="Fantom" class="h-14" />
-    <img src="/assets/fvm-url.svg" alt="fvm.exchange" class="h-7" />
-    <img src="/assets/V.svg" alt="Velocimeter" class="h-10" />
+  <img src="/assets/canto.svg" alt="Canto" class=`cv ${chain} vis h-12` />
+  <h5 class=`cv ${chain} vis`>velocimeter.xyz</h5>
+  <img src="/assets/FantomNoBg.png" alt="Fantom" class=`fv ${chain} vis h-12` />
+  <h5 class=`fv ${chain} vis`>fvm.exchange</h5>
+  <img src="/assets/mantle.svg" alt="Mantle" class=`mv ${chain} vis h-12` />
+  <h5 class=`mv ${chain} vis`>mvm.exchange</h5>
+
+  <!-- <img src="/assets/fvm-url.svg" alt="fvm.exchange" class="h-7" /> -->
+  <!-- <img src="/assets/V.svg" alt="Velocimeter" class="h-10" /> -->
 </div>
+
+<style>
+  .vis {
+    @apply hidden;
+  }
+  .cv.cvm {
+    @apply block;
+  }
+  .fv.fvm {
+    @apply block;
+  }
+  .mv.mvm {
+    @apply block;
+  }
+</style>

@@ -1,35 +1,35 @@
 ---
 import Tweet from "../../components/Tweet.astro";
+import TweetFoot from "../../components/TweetFoot.astro";
 import TweetHead from "../../components/TweetHead.astro";
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
-    const collection = await getCollection("totalbribes");
-    return collection.map((entry) => ({
-        params: { slug: entry.slug },
-        props: { entry },
-    }));
+  const collection = await getCollection("totalbribes");
+  return collection.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
 }
 
 const { entry } = Astro.props;
 ---
 
 <Layout title={entry.data.title}>
-    <Tweet bg={entry.data.bgImage}>
-        <TweetHead />
-        <div class="card vborder">
-            <div class="cardHead vgradl flex justify-center h-auto py-3">
-                <h2>Epoch # {entry.data.epoch}</h2>
-            </div>
-            <div
-                class="flex justify-center items-center vborder border-x-0 p-10"
-            >
-                <h2 class="text-[200px]">$ {entry.data.total}</h2>
-            </div>
-            <div class="cardBody vgradr flex justify-center gap-5 px-10 py-4">
-                <h5>In Bribes Available</h5>
-            </div>
-        </div>
-    </Tweet>
+  <Tweet bg={entry.data.bgImage}>
+    <TweetHead chain={entry.data.chain} />
+    <div class="card vborder">
+      <div class="cardHead vgradl flex justify-center h-auto py-3">
+        <h2>Epoch # {entry.data.epoch}</h2>
+      </div>
+      <div class="flex justify-center items-center vborder border-x-0 p-10">
+        <h2 class="text-[200px]">$ {entry.data.total}</h2>
+      </div>
+      <div class="cardBody vgradr flex justify-center gap-5 px-10 py-4">
+        <h5>In Bribes Available</h5>
+      </div>
+    </div>
+    <TweetFoot chain={entry.data.chain} />
+  </Tweet>
 </Layout>

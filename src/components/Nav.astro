@@ -4,44 +4,53 @@ import Menu from "./Menu.astro";
 
 <nav>
   <fieldset class="flex w-full gap-4 items-center">
-    <input
-      id="fvm"
-      class="peer/fvm hidden"
-      type="radio"
-      name="status"
-      checked
-    />
+    <input id="cvm" class="peer/cvm hidden" type="radio" name="status" />
+    <input id="fvm" class="peer/fvm hidden" type="radio" name="status" />
     <input id="mvm" class="peer/mvm hidden" type="radio" name="status" />
-
+    <!-- VM Logo -->
+    <div
+      class="block peer-checked/cvm:hidden peer-checked/fvm:hidden peer-checked/mvm:hidden"
+    >
+      <a href="/" class="flex items-center gap-3">
+        <img src="/assets/vm.png" alt="FVM" />
+      </a>
+    </div>
+    <!-- Chain Logos -->
+    <div class="hidden peer-checked/cvm:block">
+      <a href="/" class="flex items-center gap-3">
+        <img src="/assets/cvm.png" alt="CVM" />
+      </a>
+    </div>
     <div class="hidden peer-checked/fvm:block">
       <a href="/" class="flex items-center gap-3">
         <img src="/assets/fvm.png" alt="FVM" />
       </a>
     </div>
-
     <div class="hidden peer-checked/mvm:block">
       <a href="/" class="flex items-center gap-3">
         <img src="/assets/mvm.png" alt="mvm" />
       </a>
     </div>
-
+    <!-- Sosmed -->
     <h4
       class="text-left font-light text-[22px] leading-none mb-[2px] drop-shadow-fvm mr-auto"
     >
       Sosmed
     </h4>
-
-    <label
-      for="fvm"
-      class="text-vwhite peer-checked/fvm:text-vgreen peer-checked/fvm:font-black cursor-pointer"
+    <!-- Chain Selectors -->
+    <label for="cvm" class="peer-checked/cvm:font-black cursor-pointer"
+      >CVM</label
+    >
+    <label for="fvm" class="peer-checked/fvm:font-black cursor-pointer"
       >FVM</label
     >
-    <label
-      for="mvm"
-      class="text-vwhite peer-checked/mvm:text-vgreen peer-checked/mvm:font-black cursor-pointer"
+    <label for="mvm" class="peer-checked/mvm:font-black cursor-pointer"
       >MVM</label
     >
-
+    <!-- Chain Menus -->
+    <div class="hidden peer-checked/cvm:block">
+      <Menu chain="cvm" />
+    </div>
     <div class="hidden peer-checked/fvm:block">
       <Menu chain="fvm" />
     </div>

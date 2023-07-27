@@ -2,64 +2,66 @@
 import BribeCard from "../../components/BribeCard.astro";
 import Pair from "../../components/Pair.astro";
 import Tweet from "../../components/Tweet.astro";
+import TweetFoot from "../../components/TweetFoot.astro";
 import TweetHead from "../../components/TweetHead.astro";
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
-    const collection = await getCollection("partnerbribes");
-    return collection.map((entry) => ({
-        params: { slug: entry.slug },
-        props: { entry },
-    }));
+  const collection = await getCollection("partnerbribes");
+  return collection.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
 }
 
 const { entry } = Astro.props;
 ---
 
 <Layout title={entry.data.title}>
-    <Tweet bg={entry.data.bgImage}>
-        <TweetHead />
-        <div class="flex flex-col gap-3">
-            <h4 class="text-center">{entry.data.header}</h4>
-        </div>
-        <div class="flex gap-2">
-            <BribeCard
-                logo={entry.data.logo}
-                total={entry.data.total}
-                bribes={entry.data.items}
-            >
-                <Pair
-                    bribes={entry.data.items}
-                    tkn1={entry.data.item1.tkn1}
-                    tkr1={entry.data.item1.tkr1}
-                    tkn2={entry.data.item1.tkn2}
-                    tkr2={entry.data.item1.tkr2}
-                />
-                {
-                    entry.data.items === "twoBribe" ||
-                    entry.data.items === "threeBribe" ? (
-                        <Pair
-                            bribes={entry.data.items}
-                            tkn1={entry.data.item2.tkn1}
-                            tkr1={entry.data.item2.tkr1}
-                            tkn2={entry.data.item2.tkn2}
-                            tkr2={entry.data.item2.tkr2}
-                        />
-                    ) : null
-                }
-                {
-                    entry.data.items === "threeBribe" && (
-                        <Pair
-                            bribes={entry.data.items}
-                            tkn1={entry.data.item3.tkn1}
-                            tkr1={entry.data.item3.tkr1}
-                            tkn2={entry.data.item3.tkn2}
-                            tkr2={entry.data.item3.tkr2}
-                        />
-                    )
-                }
-            </BribeCard>
-        </div>
-    </Tweet>
+  <Tweet bg={entry.data.bgImage}>
+    <TweetHead chain={entry.data.chain} />
+    <div class="flex flex-col gap-3">
+      <h4 class="text-center">{entry.data.header}</h4>
+    </div>
+    <div class="flex gap-2">
+      <BribeCard
+        logo={entry.data.logo}
+        total={entry.data.total}
+        bribes={entry.data.items}
+      >
+        <Pair
+          bribes={entry.data.items}
+          tkn1={entry.data.item1.tkn1}
+          tkr1={entry.data.item1.tkr1}
+          tkn2={entry.data.item1.tkn2}
+          tkr2={entry.data.item1.tkr2}
+        />
+        {
+          entry.data.items === "twoBribe" ||
+          entry.data.items === "threeBribe" ? (
+            <Pair
+              bribes={entry.data.items}
+              tkn1={entry.data.item2.tkn1}
+              tkr1={entry.data.item2.tkr1}
+              tkn2={entry.data.item2.tkn2}
+              tkr2={entry.data.item2.tkr2}
+            />
+          ) : null
+        }
+        {
+          entry.data.items === "threeBribe" && (
+            <Pair
+              bribes={entry.data.items}
+              tkn1={entry.data.item3.tkn1}
+              tkr1={entry.data.item3.tkr1}
+              tkn2={entry.data.item3.tkn2}
+              tkr2={entry.data.item3.tkr2}
+            />
+          )
+        }
+      </BribeCard>
+    </div>
+    <TweetFoot chain={entry.data.chain} />
+  </Tweet>
 </Layout>
