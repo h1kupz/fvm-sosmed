@@ -1,7 +1,7 @@
 ---
 chain: fvm
-title: Epoch 2
-bgImage: /images/background10.png
-epoch: "2"
-total: 97,297
+title: v3 is Live On Canto
+bgImage: /images/fantom-partners-bkg2.png
+epoch: fdsa
+total: dasf
 ---
