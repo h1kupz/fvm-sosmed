@@ -3,17 +3,29 @@ const { chain } = Astro.props;
 ---
 
 <div
-  class="flex items-center justify-between w-full h-16 mt-auto drop-shadow-fvm"
+  class="grid grid-cols-3 justify-items-center place-content-center w-full h-16 mt-auto drop-shadow-fvm"
 >
-  <img src="/assets/canto.svg" alt="Canto" class=`cv ${chain} vis h-12` />
-  <h5 class=`cv ${chain} vis`>velocimeter.xyz</h5>
-  <img src="/assets/FantomNoBg.png" alt="Fantom" class=`fv ${chain} vis h-12` />
-  <h5 class=`fv ${chain} vis`>fvm.exchange</h5>
-  <img src="/assets/mantle.svg" alt="Mantle" class=`mv ${chain} vis h-12` />
-  <h5 class=`mv ${chain} vis`>mvm.exchange</h5>
+  <img
+    src="/assets/canto.svg"
+    alt="Canto"
+    class=`cv ${chain} vis h-12 mr-auto`
+  />
+  <h5 class=`cv ${chain} vis my-auto`>velocimeter.xyz</h5>
+  <img
+    src="/assets/FantomNoBg.png"
+    alt="Fantom"
+    class=`fv ${chain} vis h-12 mr-auto`
+  />
+  <h5 class=`fv ${chain} vis my-auto`>fvm.exchange</h5>
+  <img
+    src="/assets/mantle.svg"
+    alt="Mantle"
+    class=`mv ${chain} vis h-12 mr-auto`
+  />
+  <h5 class=`mv ${chain} vis my-auto`>mvm.exchange</h5>
 
   <!-- <img src="/assets/fvm-url.svg" alt="fvm.exchange" class="h-7" /> -->
-  <!-- <img src="/assets/V.svg" alt="Velocimeter" class="h-10" /> -->
+  <img src="/assets/V.svg" alt="Velocimeter" class="h-10 ml-auto" />
 </div>
 
 <style>
