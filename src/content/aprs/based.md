@@ -11,14 +11,14 @@ item1:
   tkr1: BALD
   tkn2: /images/eth.png
   tkr2: WETH
-  apr: "23456785"
+  apr: 1,400
   tvl: 6,000
 item2:
   tkn1: /images/bvm.png
   tkr1: BVM
   tkn2: /images/eth.png
   tkr2: WETH
-  apr: "345345"
+  apr: 4,000
   tvl: 53,000
 item3:
   tkn1: /images/FantomEventLogo.jpg
