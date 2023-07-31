@@ -3,9 +3,9 @@ backend:
   repo: h1kupz/fvm-sosmed
   branch: main
 
-site_url: https://fvm-sosmed.netlify.app
-display_url: https://fvm-sosmed.netlify.app
-logo_url: https://fvm-sosmed.netlify.app/assets/fvm.png
+site_url: https://vm-sosmed.netlify.app
+display_url: https://vm-sosmed.netlify.app
+logo_url: https://vm-sosmed.netlify.app/assets/fvm.png
 
 media_folder: public/images
 public_folder: /images
