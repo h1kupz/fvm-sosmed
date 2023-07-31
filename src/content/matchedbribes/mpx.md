@@ -2,7 +2,7 @@
 chain: fvm
 title: mpx
 bgImage: /images/blackhole2.png
-logo: /images/morphex_full_black.png
+logo: /images/morphex_full_blue.png
 total: 16,000
 item1:
   tkn1: /images/mpx_logo_256.webp

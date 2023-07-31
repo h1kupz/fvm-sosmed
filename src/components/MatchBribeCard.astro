@@ -1,56 +1,56 @@
 ---
 const {
-    briber,
-    logo,
-    total,
-    tkn1,
-    tkr1,
-    ttl1,
-    tkn2,
-    tkr2,
-    ttl2,
-    ptkr1,
-    ptkr2,
-    apr,
+  briber,
+  logo,
+  total,
+  tkn1,
+  tkr1,
+  ttl1,
+  tkn2,
+  tkr2,
+  ttl2,
+  ptkr1,
+  ptkr2,
+  apr,
 } = Astro.props;
 ---
 
 <div class="card h-auto vborder">
-    <div class="cardHead h-auto vgradr py-5 flex items-center justify-between">
-        <img src={logo} alt={briber} class="h-12" />
-        <h3 class="text-center">Bribe Matched</h3>
+  <div class="cardHead h-auto vgradr py-5 flex items-center justify-between">
+    <img src={logo} alt={briber} class="h-10" />
+    <h3 class="text-center">Bribe Matched</h3>
+  </div>
+  <div class="bg-lbackground/30 vborder border-x-0 flex px-8 py-4">
+    <div class="flex flex-col items-center justify-center">
+      <img src={tkn1} alt={tkr1} class="token h-52 mb-4" />
+      <h3 class="text-5xl mb-4">{ttl1}</h3>
+      <h4 class="m-0 normal-case">{tkr1}</h4>
     </div>
-    <div class="bg-lbackground/30 vborder border-x-0 flex px-8 py-4">
-        <div class="flex flex-col items-center justify-center">
-            <img src={tkn1} alt={tkr1} class="token h-52 mb-4" />
-            <h3 class="text-5xl mb-4">{ttl1}</h3>
-            <h4 class="m-0 normal-case">{tkr1}</h4>
-        </div>
-        <div class="flex flex-col items-center">
-            <h6 class="text-lg font-medium">Total:</h6>
-            <h2>{total}</h2>
-            <img
-                src="/assets/arrow.svg"
-                alt="Arrow"
-                class="w-[250px] mt-5 drop-shadow-v"
-            />
-            <div class="flex mb-1">
-                <img src={tkn1} alt={tkr1} class="token tokenSml" />
-                <img src={tkn2} alt={tkr2} class="token tokenSml -ml-4" />
-            </div>
-            <p class="m-0 text-center mt-2">
-                {ptkr1} / {ptkr2}
-            </p>
-        </div>
-        <div class="flex flex-col items-center justify-center">
-            <img src={tkn2} alt={tkr2} class="token h-52 mb-4" />
-            <h3 class="text-5xl mb-4">{ttl2}</h3>
-            <h4 class="m-0 normal-case">{tkr2}</h4>
-        </div>
+    <div class="flex flex-col items-center">
+      <h6 class="text-lg font-medium">Total:</h6>
+      <h2>{total}</h2>
+      <img
+        src="/assets/arrow.svg"
+        alt="Arrow"
+        class="w-[250px] mt-5 drop-shadow-v"
+      />
+      <div class="flex mb-1">
+        <img src={tkn1} alt={tkr1} class="token tokenSml" />
+        <img src={tkn2} alt={tkr2} class="token tokenSml -ml-4" />
+      </div>
+      <p class="m-0 text-center mt-2">
+        {ptkr1} / {ptkr2}
+      </p>
     </div>
-    <div class="vgradl rounded-b-3xl h-14 flex items-center justify-center">
-        <h5>
-            Projected APR: {apr}%
-        </h5>
+    <div class="flex flex-col items-center justify-center">
+      <img src={tkn2} alt={tkr2} class="token h-52 mb-4" />
+      <h3 class="text-5xl mb-4">{ttl2}</h3>
+      <h4 class="m-0 normal-case">{tkr2}</h4>
     </div>
+  </div>
+  <div class="vgradl rounded-b-3xl h-14 flex items-center justify-center">
+    <h5>
+      Projected APR: {apr}%
+    </h5>
+  </div>
 </div>
