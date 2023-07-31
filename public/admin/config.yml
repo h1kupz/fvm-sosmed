@@ -20,7 +20,7 @@ collections:
       - name: chain
         label: Chain
         widget: select
-        options: ["fvm", "mvm"]
+        options: ["bvm", "cvm", "fvm", "mvm"]
       - { name: title, label: Title/Filename (Please add chain to front of title - ie. fvm/cvm/...), widget: string }
       - {
           name: bgImage,
@@ -41,7 +41,7 @@ collections:
       - name: chain
         label: Chain
         widget: select
-        options: ["fvm", "mvm"]
+        options: ["bvm", "cvm", "fvm", "mvm"]
       - { name: title, label: Title/Filename (Please add chain to front of title - ie. fvm/cvm/...), widget: string }
       - { name: header1, label: Header 1, widget: string }
       - { name: header2, label: Header 2, widget: string }
@@ -109,7 +109,7 @@ collections:
       - name: chain
         label: Chain
         widget: select
-        options: ["fvm", "mvm"]
+        options: ["bvm", "cvm", "fvm", "mvm"]
       - { name: title, label: Title/Filename (Please add chain to front of title - ie. fvm/cvm/...), widget: string }
       - { name: header, label: Header, widget: string }
       - {
@@ -171,7 +171,7 @@ collections:
       - name: chain
         label: Chain
         widget: select
-        options: ["fvm", "mvm"]
+        options: ["bvm", "cvm", "fvm", "mvm"]
       - { name: title, label: Title/Filename (Please add chain to front of title - ie. fvm/cvm/...), widget: string }
       - {
           name: bgImage,
@@ -220,7 +220,7 @@ collections:
       - name: chain
         label: Chain
         widget: select
-        options: ["fvm", "mvm"]
+        options: ["bvm", "cvm", "fvm", "mvm"]
       - { name: title, label: Title/Filename (Please add chain to front of title - ie. fvm/cvm/...), widget: string }
       - {
           name: bgImage,
