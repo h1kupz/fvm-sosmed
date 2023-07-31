@@ -5,7 +5,7 @@ backend:
 
 site_url: https://vm-sosmed.netlify.app
 display_url: https://vm-sosmed.netlify.app
-logo_url: https://vm-sosmed.netlify.app/assets/fvm.png
+logo_url: https://vm-sosmed.netlify.app/assets/vm.png
 
 media_folder: public/images
 public_folder: /images
