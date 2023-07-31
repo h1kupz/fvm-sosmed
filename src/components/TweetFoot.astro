@@ -6,6 +6,12 @@ const { chain } = Astro.props;
   class="grid grid-cols-3 justify-items-center place-content-center w-full h-16 mt-auto drop-shadow-fvm"
 >
   <img
+    src="/assets/base.svg"
+    alt="Base"
+    class=`bv ${chain} vis h-8 mt-2 mr-auto`
+  />
+  <h5 class=`bv ${chain} vis my-auto`>base.velocimeter.xyz</h5>
+  <img
     src="/assets/canto.svg"
     alt="Canto"
     class=`cv ${chain} vis h-12 mr-auto`
@@ -29,6 +35,9 @@ const { chain } = Astro.props;
 <style>
   .vis {
     @apply hidden;
+  }
+  .bv.bvm {
+    @apply block;
   }
   .cv.cvm {
     @apply block;

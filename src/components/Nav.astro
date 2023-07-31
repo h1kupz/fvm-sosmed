@@ -4,18 +4,24 @@ import Menu from "./Menu.astro";
 
 <nav>
   <fieldset class="flex w-full gap-4 items-center">
+    <input id="bvm" class="peer/bvm hidden" type="radio" name="status" />
     <input id="cvm" class="peer/cvm hidden" type="radio" name="status" />
     <input id="fvm" class="peer/fvm hidden" type="radio" name="status" />
     <input id="mvm" class="peer/mvm hidden" type="radio" name="status" />
     <!-- VM Logo -->
     <div
-      class="block peer-checked/cvm:hidden peer-checked/fvm:hidden peer-checked/mvm:hidden"
+      class="block peer-checked/bvm:hidden peer-checked/cvm:hidden peer-checked/fvm:hidden peer-checked/mvm:hidden"
     >
       <a href="/" class="flex items-center gap-3">
-        <img src="/assets/vm.png" alt="FVM" />
+        <img src="/assets/vm.png" alt="VM" />
       </a>
     </div>
     <!-- Chain Logos -->
+    <div class="hidden peer-checked/bvm:block">
+      <a href="/" class="flex items-center gap-3">
+        <img src="/assets/bvm.png" alt="BVM" />
+      </a>
+    </div>
     <div class="hidden peer-checked/cvm:block">
       <a href="/" class="flex items-center gap-3">
         <img src="/assets/cvm.png" alt="CVM" />
@@ -38,6 +44,12 @@ import Menu from "./Menu.astro";
       Sosmed
     </h4>
     <!-- Chain Selectors -->
+
+    <label
+      for="bvm"
+      class="peer-checked/bvm:font-black cursor-pointer hover:text-vwhite transition-all duration-300 ease-out"
+      >BVM</label
+    >
     <label
       for="cvm"
       class="peer-checked/cvm:font-black cursor-pointer hover:text-vwhite transition-all duration-300 ease-out"
@@ -54,6 +66,9 @@ import Menu from "./Menu.astro";
       >MVM</label
     >
     <!-- Chain Menus -->
+    <div class="hidden peer-checked/bvm:block">
+      <Menu chain="bvm" />
+    </div>
     <div class="hidden peer-checked/cvm:block">
       <Menu chain="cvm" />
     </div>

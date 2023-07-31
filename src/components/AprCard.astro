@@ -8,6 +8,11 @@ const { chain, crds, tkn1, tkr1, tkn2, tkr2, apr, tvl } = Astro.props;
     <img src={tkn2} alt={tkr2} class="token -ml-10" />
     <div class="flex flex-wrap items-center gap-x-2 gap-y-1 ml-auto">
       <img
+        src="/assets/base-icon.png"
+        alt="Case"
+        class=`bv ${chain} vis h-9 ml-auto`
+      />
+      <img
         src="/assets/canto.svg"
         alt="Canto"
         class=`cv ${chain} vis h-9 ml-auto`
@@ -24,6 +29,7 @@ const { chain, crds, tkn1, tkr1, tkn2, tkr2, apr, tvl } = Astro.props;
       />
       <div class="ml-auto">
         <h6 class="text-xs">Live on:</h6>
+        <h6 class=`bv ${chain} vis uppercase font-medium`>Base</h6>
         <h6 class=`cv ${chain} vis uppercase font-medium`>Canto</h6>
         <h6 class=`fv ${chain} vis uppercase font-medium`>Fantom</h6>
         <h6 class=`mv ${chain} vis uppercase font-medium`>Mantle</h6>
@@ -41,6 +47,9 @@ const { chain, crds, tkn1, tkr1, tkn2, tkr2, apr, tvl } = Astro.props;
 <style>
   .vis {
     @apply hidden;
+  }
+  .bv.bvm {
+    @apply block;
   }
   .cv.cvm {
     @apply block;
