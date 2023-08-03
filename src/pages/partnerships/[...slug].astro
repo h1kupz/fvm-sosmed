@@ -18,7 +18,7 @@ const { entry } = Astro.props;
 
 <Layout title={entry.data.title}>
   <Tweet bg={entry.data.bgImage}>
-    <Partners partner={entry.data.tLogo} />
+    <Partners partner={entry.data.tLogo} chain={entry.data.chain} />
     <div class="flex gap-10">
       <img src={entry.data.logo} alt="Partner" class="token h-[400px]" />
       <img src="/assets/cross.svg" alt="X" />
