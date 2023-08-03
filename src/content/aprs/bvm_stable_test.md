@@ -1,6 +1,6 @@
 ---
 chain: bvm
-title: bvm_stable_test
+title: bvm_stable
 header1: Stable profits on BASE
 header2: "   "
 header3: "   "
