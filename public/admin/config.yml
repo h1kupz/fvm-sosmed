@@ -44,8 +44,8 @@ collections:
         options: ["bvm", "cvm", "fvm", "mvm"]
       - { name: title, label: Title/Filename (Please add chain to front of title - ie. fvm/cvm/...), widget: string }
       - { name: header1, label: Header 1, widget: string }
-      - { name: header2, label: Header 2, widget: string }
-      - { name: header3, label: Header 3, widget: string }
+      - { name: header2, label: Header 2, widget: string, required: false, }
+      - { name: header3, label: Header 3, widget: string, required: false, }
       - {
           name: bgImage,
           label: Background Image,
@@ -77,12 +77,12 @@ collections:
           widget: object,
           fields:
             [
-              { name: tkn1, label: Token 1, widget: image },
-              { name: tkr1, label: Ticker 1, widget: string },
-              { name: tkn2, label: Token 2, widget: image },
-              { name: tkr2, label: Ticker 2, widget: string },
-              { name: apr, label: APR, widget: string },
-              { name: tvl, label: TVL, widget: string },
+              { name: tkn1, label: Token 1, widget: image, required: false, },
+              { name: tkr1, label: Ticker 1, widget: string, required: false, },
+              { name: tkn2, label: Token 2, widget: image, required: false, },
+              { name: tkr2, label: Ticker 2, widget: string, required: false, },
+              { name: apr, label: APR, widget: string, required: false, },
+              { name: tvl, label: TVL, widget: string, required: false, },
             ],
         }
       - {
@@ -91,12 +91,12 @@ collections:
           widget: object,
           fields:
             [
-              { name: tkn1, label: Token 1, widget: image },
-              { name: tkr1, label: Ticker 1, widget: string },
-              { name: tkn2, label: Token 2, widget: image },
-              { name: tkr2, label: Ticker 2, widget: string },
-              { name: apr, label: APR, widget: string },
-              { name: tvl, label: TVL, widget: string },
+              { name: tkn1, label: Token 1, widget: image, required: false, },
+              { name: tkr1, label: Ticker 1, widget: string, required: false, },
+              { name: tkn2, label: Token 2, widget: image, required: false, },
+              { name: tkr2, label: Ticker 2, widget: string, required: false, },
+              { name: apr, label: APR, widget: string, required: false, },
+              { name: tvl, label: TVL, widget: string, required: false, },
             ],
         }
 
