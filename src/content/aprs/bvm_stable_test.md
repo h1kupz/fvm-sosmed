@@ -1,23 +1,23 @@
 ---
 chain: bvm
 title: bvm_stable_test
-header1: "123"
-header2: "123"
-header3: "123"
+header1: Stable profits on BASE
+header2: "   "
+header3: "   "
 bgImage: /images/background9.png
 items: twoCard
 item1:
-  tkr1: "123"
-  tkr2: "123"
-  apr: "999"
-  tvl: "999"
-  tkn1: /images/b22635dd7fb2c0d55a0e125a897155af.png
-  tkn2: /images/btc.png
+  tkr1: axlUSDT
+  tkr2: axlUSDC
+  apr: "248"
+  tvl: 57,100
+  tkn1: /images/usdt.png
+  tkn2: /images/usdc.jpg
 item2:
-  tkr1: "345"
-  tkr2: "345"
-  apr: "888"
-  tvl: "888"
-  tkn2: /images/btc.png
-  tkn1: /images/bald.jpg
+  tkr1: WETH
+  tkr2: axlUSDC
+  apr: "532"
+  tvl: 196,130
+  tkn2: /images/usdc.jpg
+  tkn1: /images/eth.png
 ---
