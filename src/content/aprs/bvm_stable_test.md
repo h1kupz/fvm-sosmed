@@ -1,8 +1,8 @@
 ---
 chain: bvm
 title: bvm_stable
-header1: Stable profits on BASE
-header2: "   "
+header1: The basics on BASE
+header2: "   Provide liquidity on BASE & earn oBVM"
 header3: "   "
 bgImage: /images/background9.png
 items: twoCard
