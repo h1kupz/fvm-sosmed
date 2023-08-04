@@ -11,6 +11,25 @@ media_folder: public/images
 public_folder: /images
 
 collections:
+  - name: blank
+    label: Blank
+    folder: /src/content/blank
+    format: frontmatter
+    create: true
+    fields:
+      - name: chain
+        label: Chain
+        widget: select
+        options: ["bvm", "cvm", "fvm", "mvm"]
+      - { name: title, label: Title/Filename (Please add chain to front of title - ie. fvm/cvm/...), widget: string }
+      - {
+          name: bgImage,
+          label: Background Image,
+          widget: image,
+          choose_url: true,
+          required: true,
+        }
+
   - name: partnerships
     label: Partnerships
     folder: /src/content/partnerships

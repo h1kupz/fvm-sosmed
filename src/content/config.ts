@@ -11,6 +11,15 @@ const partnerships = defineCollection({
   }),
 });
 
+const blank = defineCollection({
+  type: "content",
+  schema: z.object({
+    chain: z.string().optional(),
+    title: z.string(),
+    bgImage: z.string(),
+  }),
+});
+
 const aprs = defineCollection({
   type: "content",
   schema: z.object({
@@ -126,6 +135,7 @@ const totalbribes = defineCollection({
 });
 
 export const collections = {
+  blank: blank,
   partnerships: partnerships,
   aprs: aprs,
   partnerbribes: partnerbribes,

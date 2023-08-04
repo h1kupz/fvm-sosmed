@@ -1,0 +1,24 @@
+---
+import Tweet from "../../components/Tweet.astro";
+import TweetFoot from "../../components/TweetFoot.astro";
+import TweetHead from "../../components/TweetHead.astro";
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const collection = await getCollection("blank");
+  return collection.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+---
+
+<Layout title={entry.data.title}>
+  <Tweet bg={entry.data.bgImage}>
+    <TweetHead chain={entry.data.chain} />
+    <TweetFoot chain={entry.data.chain} />
+  </Tweet>
+</Layout>

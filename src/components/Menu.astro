@@ -3,6 +3,9 @@ import { getCollection } from "astro:content";
 
 const { chain } = Astro.props;
 
+const blank = await getCollection("blank", ({ data }) => {
+  return data.chain === chain;
+});
 const partner = await getCollection("partnerships", ({ data }) => {
   return data.chain === chain;
 });
@@ -21,6 +24,18 @@ const tb = await getCollection("totalbribes", ({ data }) => {
 ---
 
 <div class="flex gap-1">
+  <div class="dropdown">
+    <div class="navButton">Blank</div>
+    <ul class="dropdown-menu">
+      {
+        blank.map((blank) => (
+          <li>
+            <a href={"/blank/" + blank.slug}>{blank.data.title}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
   <div class="dropdown">
     <div class="navButton">Partnerships</div>
     <ul class="dropdown-menu">
