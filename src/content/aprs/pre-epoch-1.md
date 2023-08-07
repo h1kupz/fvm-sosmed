@@ -3,7 +3,8 @@ chain: mvm
 title: Pre Epoch 1
 header1: Pre Epoch 1 Liquidity Mining Is Live On Mantle
 header2: Earn oMVM + WMNT on these three pairs
-header3: ""
+header3: Discover more liquidity mining opportunities at
+  mantle.velocimeter.xyz/liquidity
 bgImage: /images/bg-5.png
 items: threeCard
 item1:
