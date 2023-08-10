@@ -1,11 +1,11 @@
 ---
 chain: bvm
 title: Overnight
-header1: Overnight
+header1: Mint or Zap in @ app.overnight.fi
 header2: "Yield-generating stablecoins fully collateralized with
   yield-generating DeFi assets "
-header3: USD+ pegged to USDC, DAI+ pegged to DAI, and USDT+ pegged to USDT in a
-  1:1 ratio. Mint or Zap in @ app.overnight.fi
+header3: "USD+ pegged to USDC, DAI+ pegged to DAI, and USDT+ pegged to USDT in a
+  1:1 ratio. "
 bgImage: /images/background9.png
 items: oneCard
 item1:
