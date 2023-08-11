@@ -2,7 +2,7 @@
 chain: bvm
 title: Magic Internet Money
 header1: MIM
-header2: afds
+header2: "Magic Internet Money Wizards "
 header3: Beam MIM to Base on LayerZero Via app.abracadabra.money/#/beam
 bgImage: /images/background9.png
 items: oneCard
