@@ -12,6 +12,6 @@ item1:
   tkr1: USD+
   tkn2: /images/dai_.webp
   tkr2: DAI+
-  apr: 408-1467
-  tvl: 16,800
+  apr: 132-474
+  tvl: 94,500
 ---
