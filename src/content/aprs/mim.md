@@ -1,9 +1,9 @@
 ---
 chain: bvm
-title: mim
-header1: mim
-header2: mim
-header3: mim
+title: Magic Internet Money
+header1: MIM
+header2: afds
+header3: Beam MIM to Base on LayerZero Via app.abracadabra.money/#/beam
 bgImage: /images/background9.png
 items: oneCard
 item1:
