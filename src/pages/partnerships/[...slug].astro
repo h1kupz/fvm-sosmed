@@ -22,7 +22,26 @@ const { entry } = Astro.props;
     <div class="flex gap-10">
       <img src={entry.data.logo} alt="Partner" class="token h-[400px]" />
       <img src="/assets/cross.svg" alt="X" />
-      <img src="/images/bvm.png" alt="Partner" class="token h-[400px]" />
+      <img
+        src="/images/bvm.png"
+        alt="BVM"
+        class=`bv ${entry.data.chain} vis token h-[400px]`
+      />
+      <img
+        src="/images/flow-10.png"
+        alt="CVM"
+        class=`cv ${entry.data.chain} vis token h-[400px]`
+      />
+      <img
+        src="/images/FVM-token-blu.png"
+        alt="FVM"
+        class=`fv ${entry.data.chain} vis token h-[400px]`
+      />
+      <img
+        src="/images/mvm3.png"
+        alt="MVM"
+        class=`mv ${entry.data.chain} vis token h-[400px]`
+      />
     </div>
     <TweetFoot chain={entry.data.chain} />
   </Tweet>

@@ -87,4 +87,20 @@
   .tokenSml {
     @apply h-24;
   }
+
+  .vis {
+    @apply hidden;
+  }
+  .bv.bvm {
+    @apply block;
+  }
+  .cv.cvm {
+    @apply block;
+  }
+  .fv.fvm {
+    @apply block;
+  }
+  .mv.mvm {
+    @apply block;
+  }
 }
