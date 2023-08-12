@@ -1,6 +1,6 @@
 ---
 chain: bvm
-title: Basin DAO $BASIN is Live on Velocimeter on Base
+title: Basin DAO $BASIN-WETH Pool is Live on Velocimeter on Base
 header1: Basin
 header2: "Novel Collateralized Debt Position (CDP) stablecoin on #BaseChain"
 header3: $BAI is the first Base native multicollateralized stablecoin.
