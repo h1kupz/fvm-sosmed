@@ -11,6 +11,6 @@ item1:
   tkr1: USDC
   tkn2: /images/162.png
   tkr2: MIM
-  apr: "324"
-  tvl: "234"
+  apr: 108-390
+  tvl: 7,800
 ---
