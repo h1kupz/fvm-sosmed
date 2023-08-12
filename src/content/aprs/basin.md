@@ -3,7 +3,7 @@ chain: bvm
 title: Basin
 header1: Basin
 header2: "Novel Collateralized Debt Position (CDP) stablecoin on #BaseChain"
-header3: asdf
+header3: $BAI is the first Base native multicollateralized stablecoin.
 bgImage: /images/background10.png
 items: oneCard
 item1:
