@@ -7,10 +7,11 @@ import Menu from "./Menu.astro";
     <input id="bvm" class="peer/bvm hidden" type="radio" name="status" />
     <input id="cvm" class="peer/cvm hidden" type="radio" name="status" />
     <input id="fvm" class="peer/fvm hidden" type="radio" name="status" />
+    <input id="gvm" class="peer/gvm hidden" type="radio" name="status" />
     <input id="mvm" class="peer/mvm hidden" type="radio" name="status" />
     <!-- VM Logo -->
     <div
-      class="block peer-checked/bvm:hidden peer-checked/cvm:hidden peer-checked/fvm:hidden peer-checked/mvm:hidden"
+      class="block peer-checked/bvm:hidden peer-checked/cvm:hidden peer-checked/fvm:hidden peer-checked/gvm:hidden peer-checked/mvm:hidden"
     >
       <a href="/" class="flex items-center gap-3">
         <img src="/assets/vm.png" alt="VM" />
@@ -30,6 +31,11 @@ import Menu from "./Menu.astro";
     <div class="hidden peer-checked/fvm:block">
       <a href="/" class="flex items-center gap-3">
         <img src="/assets/fvm.png" alt="FVM" />
+      </a>
+    </div>
+    <div class="hidden peer-checked/gvm:block">
+      <a href="/" class="flex items-center gap-3">
+        <img src="/assets/gvm.png" alt="gvm" />
       </a>
     </div>
     <div class="hidden peer-checked/mvm:block">
@@ -61,6 +67,11 @@ import Menu from "./Menu.astro";
       >FVM</label
     >
     <label
+      for="gvm"
+      class="peer-checked/gvm:font-black cursor-pointer hover:text-vwhite transition-all duration-300 ease-out"
+      >GVM</label
+    >
+    <label
       for="mvm"
       class="peer-checked/mvm:font-black cursor-pointer hover:text-vwhite transition-all duration-300 ease-out"
       >MVM</label
@@ -74,6 +85,9 @@ import Menu from "./Menu.astro";
     </div>
     <div class="hidden peer-checked/fvm:block">
       <Menu chain="fvm" />
+    </div>
+    <div class="hidden peer-checked/gvm:block">
+      <Menu chain="gvm" />
     </div>
     <div class="hidden peer-checked/mvm:block">
       <Menu chain="mvm" />

@@ -1,5 +1,5 @@
 ---
-chain: fvm
+chain: gvm
 title: Three LZ Pairs
 header1: Back To Basics
 header2: Velocimeter Is Designed To Incentivize Deep Sustainable Liquidity

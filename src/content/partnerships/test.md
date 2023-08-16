@@ -1,5 +1,5 @@
 ---
-chain: mvm
+chain: gvm
 title: fvm_fBOMB
 bgImage: /images/fantom-partners-bkg2.png
 tLogo: /images/capture-removebg-preview.png

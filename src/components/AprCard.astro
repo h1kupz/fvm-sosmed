@@ -23,6 +23,11 @@ const { chain, crds, tkn1, tkr1, tkn2, tkr2, apr, tvl } = Astro.props;
         class=`fv ${chain} vis h-9 ml-auto`
       />
       <img
+        src="/assets/gnosis-icon.png"
+        alt="Gnosis"
+        class=`gv ${chain} vis h-9 ml-auto`
+      />
+      <img
         src="/assets/mantle-icon.svg"
         alt="Mantle"
         class=`mv ${chain} vis h-9 ml-auto`
@@ -32,6 +37,7 @@ const { chain, crds, tkn1, tkr1, tkn2, tkr2, apr, tvl } = Astro.props;
         <h6 class=`bv ${chain} vis uppercase font-medium`>Base</h6>
         <h6 class=`cv ${chain} vis uppercase font-medium`>Canto</h6>
         <h6 class=`fv ${chain} vis uppercase font-medium`>Fantom</h6>
+        <h6 class=`gv ${chain} vis uppercase font-medium`>Gnosis</h6>
         <h6 class=`mv ${chain} vis uppercase font-medium`>Mantle</h6>
       </div>
     </div>
