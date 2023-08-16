@@ -7,9 +7,9 @@ header3: Visit magnate.finance
 bgImage: /images/background9.png
 items: oneCard
 item1:
-  tkn1: /images/192.webp
+  tkn1: /images/eth.png
   tkr1: MAG
-  tkn2: /images/eth.png
+  tkn2: /images/192.webp
   tkr2: MAG
   apr: "1333"
   tvl: 1,000
