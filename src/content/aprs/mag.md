@@ -1,9 +1,9 @@
 ---
 chain: bvm
 title: mag
-header1: mag
-header2: mag
-header3: mag
+header1: Magnate Finance
+header2: Effortlessly lend, borrow and earn interest with your digital assets
+header3: Visit magnate.finance
 bgImage: /images/background9.png
 items: oneCard
 item1:
