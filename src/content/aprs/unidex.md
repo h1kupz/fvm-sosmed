@@ -11,7 +11,7 @@ item1:
   tkn1: /images/eth.png
   tkn2: /images/unidx-1-.webp
   tkr2: UNIDX
-  apr: 500-2000
-  tvl: 1,000
+  apr: 116-416
+  tvl: 48,000
   tkr1: WETH
 ---
