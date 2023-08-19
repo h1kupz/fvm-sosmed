@@ -11,6 +11,6 @@ item1:
   tkn2: /images/tiusd.jpg
   tkr1: USDbC
   tkr2: TiUSD
-  apr: "1000"
+  apr: 111-401% oBVM
   tvl: 1,000
 ---
