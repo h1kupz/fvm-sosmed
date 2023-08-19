@@ -1,9 +1,10 @@
 ---
 chain: bvm
 title: TiTi
-header1: TiTi
-header2: TiTi
-header3: TiTi
+header1: TiTi Protocol
+header2: ""
+header3: No-Liquidation-Risk, Revenue-Earning Stablecoin 100+% collateralized by
+  Multi-Asset-Reserve
 bgImage: /images/bg-5.png
 items: oneCard
 item1:
