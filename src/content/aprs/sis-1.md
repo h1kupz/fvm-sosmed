@@ -1,9 +1,9 @@
 ---
 chain: bvm
 title: SIS-WETH gSIS-WETH
-header1: SIS
-header2: SIS
-header3: SIS
+header1: SIS-WETH gSIS-WETH
+header2: SIS-WETH gSIS-WETH
+header3: SIS-WETH gSIS-WETH
 bgImage: /images/background9.png
 items: twoCard
 item1:
