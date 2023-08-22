@@ -1,9 +1,10 @@
 ---
 chain: bvm
 title: SIS-WETH gSIS-WETH
-header1: SIS-WETH gSIS-WETH
-header2: SIS-WETH gSIS-WETH
-header3: SIS-WETH gSIS-WETH
+header1: FriendFi  is here
+header2: adf
+header3: Provide liquidity for SIS-WETH Wrapped Friend Keys) or gSIS-WETH (SIS
+  Wrapped Friend Keyholder Governance Token)
 bgImage: /images/background9.png
 items: twoCard
 item1:
