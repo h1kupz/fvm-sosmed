@@ -1,6 +1,6 @@
 ---
 chain: bvm
-title: SIS
+title: SIS-WETH gSIS-WETH
 header1: SIS
 header2: SIS
 header3: SIS
