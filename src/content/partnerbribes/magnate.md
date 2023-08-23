@@ -3,8 +3,8 @@ chain: bvm
 title: Magnate
 header: Magnate
 bgImage: /images/background9.png
-logo: /images/192.webp
-total: $3,600
+logo: /images/image.png
+total: 3,286
 items: oneBribe
 item1:
   tkn1: /images/192.webp
