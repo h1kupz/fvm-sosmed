@@ -11,6 +11,19 @@ item1:
   tkr1: WETH
   tkn2: /images/yqjyt0sd_400x400.png
   tkr2: SIS
-  apr: 680-2000
-  tvl: 18,000
+  apr: 800-3000
+  tvl: 22,000
+item2:
+  tkn1: /images/racerinu.jpeg
+  tkr1: RACER
+  tkn2: /images/eth.png
+  tkr2: WETH
+  apr: 15488-55756
+  tvl: <1,000
+item3:
+  tvl: 1,000
+  apr: 3154-11356
+  tkr2: WETH
+  tkn2: /images/scott.png
+  tkr1: SCOTT
 ---
