@@ -1,6 +1,6 @@
 ---
 chain: bvm
-title: 3 ft folks
+title: bvm3 ft folks
 header1: SIS
 header2: SIS
 header3: SIS
