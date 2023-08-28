@@ -10,8 +10,8 @@ items: oneCard
 item1:
   tkn1: /images/usd__logo.webp
   tkr1: USD+
-  tkn2: /images/dai_.webp
+  tkn2: /images/eth.png
   tkr2: DAI+
-  apr: 132-474
-  tvl: 94,500
+  apr: 🔥
+  tvl: <1,000
 ---
