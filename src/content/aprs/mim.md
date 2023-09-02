@@ -14,10 +14,10 @@ item1:
   apr: 140-500
   tvl: 3,000
 item2:
-  tkn1: /images/eth.png
-  tkr1: WETH
-  tkn2: /images/162.png
-  tkr2: MIM
-  apr: 1000🔥
-  tvl: 1,000
+  tkn1: ""
+  tkr1: ""
+  tkn2: ""
+  tkr2: ""
+  apr: ""
+  tvl: ""
 ---
