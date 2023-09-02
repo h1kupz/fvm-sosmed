@@ -40,22 +40,22 @@ const aprs = defineCollection({
     }),
     item2: z
       .object({
-        tkn1: z.string(),
-        tkr1: z.string(),
-        tkn2: z.string(),
-        tkr2: z.string(),
-        apr: z.string(),
-        tvl: z.string(),
+        tkn1: z.string().optional(),
+        tkr1: z.string().optional(),
+        tkn2: z.string().optional(),
+        tkr2: z.string().optional(),
+        apr: z.string().optional(),
+        tvl: z.string().optional(),
       })
       .optional(),
     item3: z
       .object({
-        tkn1: z.string(),
-        tkr1: z.string(),
-        tkn2: z.string(),
-        tkr2: z.string(),
-        apr: z.string(),
-        tvl: z.string(),
+        tkn1: z.string().optional(),
+        tkr1: z.string().optional(),
+        tkn2: z.string().optional(),
+        tkr2: z.string().optional(),
+        apr: z.string().optional(),
+        tvl: z.string().optional(),
       })
       .optional(),
   }),
@@ -79,18 +79,18 @@ const partnerbribes = defineCollection({
     }),
     item2: z
       .object({
-        tkn1: z.string(),
-        tkr1: z.string(),
-        tkn2: z.string(),
-        tkr2: z.string(),
+        tkn1: z.string().optional(),
+        tkr1: z.string().optional(),
+        tkn2: z.string().optional(),
+        tkr2: z.string().optional(),
       })
       .optional(),
     item3: z
       .object({
-        tkn1: z.string(),
-        tkr1: z.string(),
-        tkn2: z.string(),
-        tkr2: z.string(),
+        tkn1: z.string().optional(),
+        tkr1: z.string().optional(),
+        tkn2: z.string().optional(),
+        tkr2: z.string().optional(),
       })
       .optional(),
   }),
