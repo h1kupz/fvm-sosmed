@@ -11,4 +11,6 @@ item1:
   tkr2: CRV
   apr: "1000"
   tvl: "60000"
+item2:
+  apr: "600"
 ---
