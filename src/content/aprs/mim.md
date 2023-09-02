@@ -1,9 +1,9 @@
 ---
 chain: bvm
-title: Magic Internet Money
-header1: MIM
-header2: "Magic Internet Money Wizards "
-header3: Beam MIM to Base on LayerZero Via app.abracadabra.money/#/beam
+title: Qi DAO x Velocimeter
+header1: MAI
+header2: MAI
+header3: Create a vault @ app.mai.finance/vaults/create
 bgImage: /images/background9.png
 items: oneCard
 item1:
