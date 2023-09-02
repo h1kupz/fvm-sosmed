@@ -1,6 +1,6 @@
 ---
 chain: bvm
-title: BVMQi DAO x Velocimeter
+title: Qi DAO x Velocimeter
 header1: MAI
 header2: MAI
 header3: Create a vault @ app.mai.finance/vaults/create
