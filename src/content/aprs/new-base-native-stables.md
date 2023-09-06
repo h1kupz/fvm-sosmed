@@ -3,7 +3,7 @@ chain: bvm
 title: New Base Native Stables
 header1: New Base Native Stables
 header2: BAI USDC
-header3: BAI USDC
+header3: ""
 bgImage: /images/bg-1.png
 items: twoCard
 item1:
