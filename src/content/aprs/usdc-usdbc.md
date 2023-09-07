@@ -7,7 +7,7 @@ header3: ""
 bgImage: /images/bg-1.png
 items: twoCard
 item1:
-  tkn1: /images/image-1-.png
+  tkn1: /images/image-2-.png
   tkr1: USDbC
   tkr2: USDC
   tkn2: /images/usdc.jpg
