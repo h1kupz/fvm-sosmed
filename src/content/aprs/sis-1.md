@@ -1,10 +1,9 @@
 ---
 chain: bvm
-title: SIS-WETH gSIS-WETH
-header1: Weekly gSIS Airdrop claims @ base.velocimeter.xyz/options/ogSIS
-header2: gSIS-WETH LPs earn $ogSIS + oBVM + $ETH
-header3: Provide liquidity for SIS-WETH Wrapped Friend Keys) or gSIS-WETH (SIS
-  Wrapped Friend Keyholder Governance Token)
+title: SIS FT
+header1: SIS-WETH gSIS-WETH
+header2: Weekly gSIS Airdrop claims @ base.velocimeter.xyz/options/ogSIS
+header3: gSIS-WETH LPs earn $ogSIS + oBVM + $ETH
 bgImage: /images/background9.png
 items: twoCard
 item1:
