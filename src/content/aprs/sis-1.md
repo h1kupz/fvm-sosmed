@@ -1,7 +1,8 @@
 ---
 chain: bvm
 title: SIS FT
-header1: SIS-WETH gSIS-WETH
+header1: "Wrapped FT keys  activity is heating up w/ $6000 24 hour trading
+  volume on SIS-WETH "
 header2: Weekly gSIS Airdrop claims @ base.velocimeter.xyz/options/ogSIS
 header3: gSIS-WETH LPs earn $ogSIS + oBVM + $ETH
 bgImage: /images/background9.png
