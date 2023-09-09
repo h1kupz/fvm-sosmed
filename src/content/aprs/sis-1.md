@@ -1,9 +1,8 @@
 ---
 chain: bvm
 title: SIS-WETH gSIS-WETH
-header1: "FriendFi  is here & the snapshot for SIS Wrapped Friend Keyholder
-  Governance Token has not been taken. "
-header2: LPs earn $ogSIS + oBVM + $ETH
+header1: Weekly gSIS Airdrop claims @ base.velocimeter.xyz/options/ogSIS
+header2: gSIS-WETH LPs earn $ogSIS + oBVM + $ETH
 header3: Provide liquidity for SIS-WETH Wrapped Friend Keys) or gSIS-WETH (SIS
   Wrapped Friend Keyholder Governance Token)
 bgImage: /images/background9.png
