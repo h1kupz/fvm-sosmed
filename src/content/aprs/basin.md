@@ -11,13 +11,13 @@ item1:
   tkr1: BASIN
   tkn2: /images/eth.png
   tkr2: WETH
-  apr: 342-1232
-  tvl: 5,500
+  apr: 57-257
+  tvl: 37,500
 item2:
   tkn1: /images/bai.png
   tkr1: BAI
   tkn2: /images/usdc.jpg
   tkr2: USDC
-  apr: "345"
-  tvl: "345"
+  apr: 243-1094
+  tvl: 3,500
 ---
