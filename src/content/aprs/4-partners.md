@@ -4,7 +4,7 @@ title: 4 partners
 header1: asdf
 header2: asdf
 header3: sfd
-bgImage: /images/usdy-1-.png
+bgImage: /images/background9.png
 items: threeCard
 item1:
   tkn1: /images/usdy-1-.png
