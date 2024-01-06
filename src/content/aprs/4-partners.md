@@ -1,9 +1,9 @@
 ---
 chain: mvm
-title: 4 partners
-header1: asdf
-header2: asdf
-header3: sfd
+title: Lockdrop APRs
+header1: Lock liquidity for 6 weeks & earn these APRs as a base plus oMVM.
+header2: ""
+header3: ""
 bgImage: /images/background9.png
 items: threeCard
 item1:
