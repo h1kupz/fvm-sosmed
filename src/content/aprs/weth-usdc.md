@@ -2,8 +2,9 @@
 chain: bvm
 title: WETH-USDC
 header1: Earn OP + oBVM
-header2: Concentrated Liquidity Narrow ($2200-$2400) .1% spread autocompound
-header3: ""
+header2: "Concentrated Liquidity Narrow ($2200-$2400) "
+header3: Velocimeter CL is powered by Graphene Overlapping Orders this pair has
+  a .5% auto-compounding spread
 bgImage: /images/background9.png
 items: oneCard
 item1:
