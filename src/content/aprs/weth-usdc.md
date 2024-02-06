@@ -11,6 +11,6 @@ item1:
   tkr1: WETH
   tkn2: /images/usdc.jpg
   tkr2: USDC
-  apr: 5000%
+  apr: "5000"
   tvl: 30,000
 ---
